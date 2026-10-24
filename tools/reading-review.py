@@ -11,6 +11,8 @@ import re
 import subprocess
 import sys
 from pathlib import Path
+_bootstrap = Path(__file__).resolve().parents[1] / 'engine/source_runtime.py'
+exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 from pypdf import PdfReader
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'engine'))
 from evidence import verify

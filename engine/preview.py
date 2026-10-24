@@ -19,6 +19,9 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import unquote, quote, urlsplit, urlunsplit
 
+_bootstrap = Path(__file__).with_name('source_runtime.py')
+exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
+
 
 def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()

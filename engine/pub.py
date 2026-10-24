@@ -18,6 +18,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+_bootstrap = ROOT / 'engine/source_runtime.py'
+exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 
 POLICY = {
     "schema_version": 3,
@@ -28,6 +30,7 @@ POLICY = {
     "output_policy": "dedicated-output-root/preview/<build-id>/<attempt-id>",
     "project_schema": 1,
     "git_probe_policy": "reject-content-filters-and-gitlinks-v1",
+    "python_import_policy": "source-only-no-pyc-v1",
     "result_commit_policy": "file-fsync-then-no-replace-link-v1",
 }
 DIRECTORY_FLAGS = os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW
@@ -231,7 +234,7 @@ class ResultCommit:
 def prepare(project, views=None):
     from project import open_output
     open_output(project, sys.modules[__name__])
-    with root_handle(project.output) as root_fd:
+    with absolute_directory(project.output) as root_fd:
         source = project.provenance(sys.modules[__name__])
         snapshot = input_snapshot(project, views)
         runtime = runtime_identity()
@@ -273,6 +276,18 @@ def prepare(project, views=None):
                         pass  # Pending files are never terminal results.
                     raise
         return outcome
+
+
+@contextmanager
+def absolute_directory(path, create=False):
+    """Open every output path component without following links, including parents."""
+    path = Path(path).absolute()  # Never resolve(): it would conceal symlinks.
+    with root_handle(Path('/')) as root_fd:
+        if path == Path('/'):
+            yield root_fd
+        else:
+            with directory(root_fd, str(path).lstrip('/'), create=create) as fd:
+                yield fd
 
 
 @contextmanager

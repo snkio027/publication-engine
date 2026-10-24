@@ -10,6 +10,8 @@ from unittest import mock
 
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
+_bootstrap = HERE.parent / 'engine/source_runtime.py'
+exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 sys.path.insert(0, str(HERE.parent / "engine"))
 import candidate
 import pub
@@ -54,6 +56,26 @@ class CandidateIsolationTests(base.Fixture, unittest.TestCase):
         (self.root / 'candidate').symlink_to(self.dist, target_is_directory=True)
         with self.assertRaises(OSError):
             self.freeze()
+
+    def test_output_root_symlink_rejected_before_payload(self):
+        archive = self.base / 'archive'
+        self.output.rename(archive)
+        self.output.symlink_to(archive, target_is_directory=True)
+        before = base.tree_bytes(archive)
+        with mock.patch.object(candidate, 'payload', side_effect=AssertionError('must not read payload')):
+            with self.assertRaises(OSError):
+                candidate.freeze(self.output, self.relative, pub, 'fixture')
+        self.assertEqual(base.tree_bytes(archive), before)
+
+    def test_output_ancestor_symlink_rejected_before_payload(self):
+        archive = self.base / 'archive'
+        self.output.parent.rename(archive)
+        self.output.parent.symlink_to(archive, target_is_directory=True)
+        before = base.tree_bytes(archive)
+        with mock.patch.object(candidate, 'payload', side_effect=AssertionError('must not read payload')):
+            with self.assertRaises(OSError):
+                candidate.freeze(self.output, self.relative, pub, 'fixture')
+        self.assertEqual(base.tree_bytes(archive), before)
 
     def test_preview_directory_symlink_rejected(self):
         linked = self.root / ('preview/' + 'e' * 64)

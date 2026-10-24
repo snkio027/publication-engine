@@ -11,6 +11,8 @@ from pathlib import Path
 
 sys.dont_write_bytecode=True
 ROOT=Path(__file__).resolve().parents[1]
+_bootstrap = ROOT / 'engine/source_runtime.py'
+exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 sys.path.insert(0,str(ROOT/'engine'))
 import preview
 spec=importlib.util.spec_from_file_location('reading',ROOT/'tools/reading-review.py')

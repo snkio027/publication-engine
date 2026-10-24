@@ -14,6 +14,8 @@ from unittest import mock
 
 sys.dont_write_bytecode = True
 HERE = Path(__file__).resolve().parent
+_bootstrap = HERE.parent / 'engine/source_runtime.py'
+exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 sys.path.insert(0, str(HERE.parent / "engine"))
 import preview
 import preview_audit
@@ -157,9 +159,13 @@ class RealPreviewTests(base.Fixture, unittest.TestCase):
         return child
 
     def run_path(self):
-        return next((self.root / "publication/build/preview").glob("*/*"))
+        return next((self.output / "preview").glob("*/*"))
 
     def test_real_success_and_compiler_cannot_write_dist(self):
+        # Match a consumer's nested output so the linked ancestor is not a product path.
+        self.output = self.output / 'standalone'
+        self.config['output_root'] = 'publication/build/standalone'
+        self.descriptor.write_text(json.dumps(self.config))
         protected = [self.dist / "history.bin", self.engine / "engine/pub.py",
                      self.root / "00-fixture.md", self.template]
         for number, target in enumerate(protected):
@@ -195,6 +201,19 @@ class RealPreviewTests(base.Fixture, unittest.TestCase):
         for entry in manifest['identity']['files']:
             self.assertEqual(pub.digest((target / entry['path']).read_bytes()), entry['sha256'])
         old = base.tree_bytes(target)
+        # A genuine successful preview still cannot authorize an ancestor link.
+        archive = self.base / 'historical-archive'
+        self.output.parent.rename(archive)
+        self.output.parent.symlink_to(archive, target_is_directory=True)
+        archived = base.tree_bytes(archive)
+        try:
+            refused = self.cli('candidate', '--from-preview', relative)
+            self.assertNotEqual(refused.returncode, 0, refused.stdout)
+            self.assertNotIn('CANDIDATE_PREPARED_FOR_REVIEW', refused.stdout)
+            self.assertEqual(base.tree_bytes(archive), archived)
+        finally:
+            self.output.parent.unlink()
+            archive.rename(self.output.parent)
         # Mutating the old preview must never silently refresh a frozen candidate.
         pdf_path = self.run_path() / 'work/output/pdf/TEST-0-draft.pdf'
         pdf_path.write_bytes(pdf_path.read_bytes() + b'changed')

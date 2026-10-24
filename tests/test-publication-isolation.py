@@ -10,6 +10,8 @@ from pathlib import Path
 from unittest import mock
 
 HERE=Path(__file__).resolve().parent
+_bootstrap = HERE.parent / 'engine/source_runtime.py'
+exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 SCRIPTS=HERE.parent/'engine'
 sys.path.insert(0,str(SCRIPTS))
 import pub, project, source_model

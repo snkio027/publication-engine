@@ -74,7 +74,7 @@ def load(engine, descriptor, profile, pub):
 
 def open_output(project, pub):
     """Initialize only an empty dedicated output root; never adopt existing data."""
-    with pub.root_handle(Path('/')) as fd, pub.directory(fd, str(project.output).lstrip('/'), create=True) as out:
+    with pub.absolute_directory(project.output, create=True) as out:
         names = os.listdir(out)
         if not names:
             pub.write_bytes(out, '.publication-output', OUTPUT_MARKER)

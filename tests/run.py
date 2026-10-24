@@ -11,8 +11,10 @@ import hashlib
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+_bootstrap = HERE.parent / 'engine/source_runtime.py'
+exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 REGISTRY = {
-    'logic': ['test-publication-isolation.py','test-candidate.py','test-evidence.py'],
+    'logic': ['test-publication-isolation.py','test-candidate.py','test-evidence.py','test-source-runtime.py'],
     'adapters': ['test-reading.py'],
     'native': ['test-preview.py'],
 }

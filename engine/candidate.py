@@ -97,10 +97,11 @@ def freeze(root, relative, pub, profile, expected_project=None):
     if not re.fullmatch(r'preview/[0-9a-f]{64}/[0-9a-f]{32}', relative):
         raise pub.PreparationError('--from-preview must be output-relative preview/<id>/<attempt>')
     from project import OUTPUT_MARKER
-    with pub.root_handle(root) as output_fd:
-        if pub.regular_bytes(output_fd, '.publication-output') != OUTPUT_MARKER:
+    # Retain this verified root handle through marker validation, reads and writes.
+    # O_NOFOLLOW on just the final path component does not protect ancestors.
+    with pub.absolute_directory(root) as root_fd, pub.directory(root_fd, relative) as run_fd:
+        if pub.regular_bytes(root_fd, '.publication-output') != OUTPUT_MARKER:
             raise pub.PreparationError('unrecognized output workspace')
-    with pub.root_handle(root) as root_fd, pub.directory(root_fd, relative) as run_fd:
         files, source, ready = payload(run_fd, pub)
         if expected_project is not None and source['identity']['source'].get('project_sha256') != expected_project:
             raise pub.PreparationError('candidate belongs to a different project descriptor')
