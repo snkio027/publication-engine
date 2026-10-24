@@ -1,0 +1,23 @@
+test_counterexample_cache_is_executable_without_policy (__main__.SourceRuntimeTests.test_counterexample_cache_is_executable_without_policy) ... ok
+test_explicit_source_loader_ignores_unchecked_cache (__main__.SourceRuntimeTests.test_explicit_source_loader_ignores_unchecked_cache) ... ok
+test_review_entrypoints_ignore_poisoned_evidence_cache (__main__.SourceRuntimeTests.test_review_entrypoints_ignore_poisoned_evidence_cache) ... ok
+test_sourceless_cache_fails_without_executing (__main__.SourceRuntimeTests.test_sourceless_cache_fails_without_executing) ... ok
+test_timestamp_cache_ignored_even_with_matching_source_stat (__main__.SourceRuntimeTests.test_timestamp_cache_ignored_even_with_matching_source_stat) ... ok
+test_unchecked_caches_cannot_change_behavior_or_identity (__main__.SourceRuntimeTests.test_unchecked_caches_cannot_change_behavior_or_identity) ... FAIL
+
+======================================================================
+FAIL: test_unchecked_caches_cannot_change_behavior_or_identity (__main__.SourceRuntimeTests.test_unchecked_caches_cannot_change_behavior_or_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/nekoreb/Workspace/03_Projects/publication-engine/tests/test-source-runtime.py", line 50, in test_unchecked_caches_cannot_change_behavior_or_identity
+    self.assertEqual(record['build_id'], baseline['build_id'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '42a944e943f24f9be189166f9a4fe743cb2ee4f9d479e5bda4f2c0ddfd3403c8' != '481e538ed3f31cccd0ef9d8c09df3d3254aec129bf454b8a663bd2c53fa1c3cf'
+- 42a944e943f24f9be189166f9a4fe743cb2ee4f9d479e5bda4f2c0ddfd3403c8
++ 481e538ed3f31cccd0ef9d8c09df3d3254aec129bf454b8a663bd2c53fa1c3cf
+
+
+----------------------------------------------------------------------
+Ran 6 tests in 5.864s
+
+FAILED (failures=1)

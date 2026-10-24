@@ -60,6 +60,10 @@ uv run --project <engine> --locked python -B <engine>/engine/pub.py candidate \
 
 worker 仅可写本次 `work/`，禁止联网；输入、引擎/内容/产品目录和历史输出不在可写范围。原始 AST 保真、PDF 内容/导航检查、全页 PNG 摘要、视图集合和候选冻结继续采用既有合同。成功终态通过文件同步后的排他 link 提交；缺少、失败或取消终态不能解释为成功。
 
+文档指定的脚本入口在首次文件系统模块导入前，从原始源码安装 `source-only-no-pyc-v1` 策略：常规与显式 source loader 都只编译 `.py`，不读取 timestamp/hash `.pyc`；无源码的 bytecode loader 明确拒绝。策略通过已加载的 CPython frozen loader 安装，自身也从源码启动，不能先消费自己的缓存。`-B` 只作为禁止缓存写入的补充，不再承担防止缓存执行的安全保证。入口、策略源码、CPython/uv 启动与受信运行环境仍是信任前提；不支持通过 `python -m` 或未经保护的宿主任意导入来建立这一保证。这不是任意 Python 的安全加载器或系统启动隔离。
+
+预览和候选使用同一逐级 no-follow 输出路径检查。候选从 `/` 遍历到输出根，标记验证、源尝试读取和候选写入保留同一个根目录句柄，不再只检查最后一级。拒绝的 linked ancestor 不会被接管，也不会先复制再报告失败。定向修复与反例证据见 [安全边界修复](reviews/safety-boundaries/README.md)。
+
 本批没有实施精细布局依赖闭包或完整读取白名单。选定的仓库输入与工具在前后核对；额外 TeX/字体 `.fls` 依赖仍是运行后观察，不是 hermetic build 或跨机器字节级可复现证明。可信 adapter 的错误检测也不等于对恶意 Python 的语义证明。
 
 ## 检查与人工阅读
