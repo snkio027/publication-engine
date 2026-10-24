@@ -1,0 +1,12 @@
+[project]
+name = "publication-engine"
+version = "0.1.0"
+requires-python = "==3.14.8"
+dependencies = ["pypdf==6.10.0"]
+
+[dependency-groups]
+review = ["Pillow==12.0.0"]
+
+[tool.uv]
+package = false
+python-preference = "only-managed"
