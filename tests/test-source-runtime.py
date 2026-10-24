@@ -1,4 +1,9 @@
 """Real subprocess counterexamples: executable caches cannot bypass the source pin."""
+# Install before filesystem imports can consume a shadowing bytecode module.
+_bootstrap = (__file__.rpartition('/')[0] or '.') + '/../engine/source_runtime.py'
+with open(_bootstrap, 'rb') as _source:
+    exec(compile(_source.read(), _bootstrap, 'exec'), {'__name__': '_publication_source_runtime'})
+
 import importlib.util
 import json
 import py_compile
@@ -9,8 +14,6 @@ import unittest
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-_bootstrap = HERE.parent / 'engine/source_runtime.py'
-exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 spec = importlib.util.spec_from_file_location('isolation', HERE / 'test-publication-isolation.py')
 base = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(base)
@@ -72,6 +75,18 @@ class SourceRuntimeTests(base.Fixture, unittest.TestCase):
         result = self.cli('preview', '--prepare-only')
         self.assertNotEqual(result.returncode, 0)
         self.assertIn('rejects bytecode-only module', result.stderr)
+        self.assertNotIn('PREPARED', result.stdout)
+        self.assertFalse(self.output.exists())
+
+    def test_startup_shadow_bytecode_rejected_before_stdlib_imports(self):
+        mutant = self.base / 'shadow.py'
+        mutant.write_text('from pathlib import Path\nPath(' + repr(str(self.dist / 'history.bin')) +
+                          ').write_text("STARTUP_CACHE")\n')
+        # json is an actual early import of pub.py. No engine source is changed.
+        py_compile.compile(str(mutant), cfile=str(self.engine / 'engine/json.pyc'), doraise=True)
+        result = self.cli('preview', '--prepare-only')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('rejects bytecode-only module: json', result.stderr)
         self.assertNotIn('PREPARED', result.stdout)
         self.assertFalse(self.output.exists())
 

@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 """Explicit local test registry: a new test file cannot silently go unrun."""
+# Install before filesystem imports can consume a shadowing bytecode module.
+_bootstrap = (__file__.rpartition('/')[0] or '.') + '/../engine/source_runtime.py'
+with open(_bootstrap, 'rb') as _source:
+    exec(compile(_source.read(), _bootstrap, 'exec'), {'__name__': '_publication_source_runtime'})
+
 import argparse
 import json
 import os
@@ -11,8 +16,6 @@ import hashlib
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-_bootstrap = HERE.parent / 'engine/source_runtime.py'
-exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 REGISTRY = {
     'logic': ['test-publication-isolation.py','test-candidate.py','test-evidence.py','test-source-runtime.py'],
     'adapters': ['test-reading.py'],

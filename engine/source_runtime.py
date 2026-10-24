@@ -1,11 +1,15 @@
 """Source-only import policy for publication entry points.
 
-Bootstrap this file with read_bytes/compile/exec, NOT an import: a cached copy of
+Bootstrap this file with a raw read/compile/exec, NOT an import: a cached copy of
 the policy itself must never run first. CPython startup and this source remain
 trusted. This does not sandbox arbitrary source code or replace engine pinning.
 """
 import sys
-from importlib.machinery import SourceFileLoader, SourcelessFileLoader
+# These are the same loader classes exported by importlib.machinery. Obtain them
+# from CPython's already-loaded frozen module: importing a filesystem module to
+# install the policy would itself leave a pre-policy cache execution window.
+SourceFileLoader = sys.modules['_frozen_importlib_external'].SourceFileLoader
+SourcelessFileLoader = sys.modules['_frozen_importlib_external'].SourcelessFileLoader
 
 
 def source_code(loader, fullname):

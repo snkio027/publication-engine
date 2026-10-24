@@ -3,14 +3,17 @@
 
 Does not approve visuals. Human inspection scope must be recorded separately.
 """
+# Install before filesystem imports can consume a shadowing bytecode module.
+_bootstrap = (__file__.rpartition('/')[0] or '.') + '/../engine/source_runtime.py'
+with open(_bootstrap, 'rb') as _source:
+    exec(compile(_source.read(), _bootstrap, 'exec'), {'__name__': '_publication_source_runtime'})
+
 import argparse
 import hashlib
 import json
 import io
 import sys
 from pathlib import Path
-_bootstrap = Path(__file__).resolve().parents[1] / 'engine/source_runtime.py'
-exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 from PIL import Image, ImageDraw
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'engine'))
 from evidence import verify

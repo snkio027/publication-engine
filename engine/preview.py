@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 """One-engine, macOS sandboxed draft PDF preview pipeline. No publication API."""
+# Install before filesystem imports can consume a shadowing bytecode module.
+_bootstrap = (__file__.rpartition('/')[0] or '.') + '/source_runtime.py'
+with open(_bootstrap, 'rb') as _source:
+    exec(compile(_source.read(), _bootstrap, 'exec'), {'__name__': '_publication_source_runtime'})
+
 import copy
 import importlib.util
 import ctypes
@@ -19,8 +24,6 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import unquote, quote, urlsplit, urlunsplit
 
-_bootstrap = Path(__file__).with_name('source_runtime.py')
-exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 
 
 def sha(path):

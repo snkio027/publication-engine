@@ -1,4 +1,9 @@
 """Adversarial protocol fixtures use actual evidence/candidate/review entry points."""
+# Install before filesystem imports can consume a shadowing bytecode module.
+_bootstrap = (__file__.rpartition('/')[0] or '.') + '/../engine/source_runtime.py'
+with open(_bootstrap, 'rb') as _source:
+    exec(compile(_source.read(), _bootstrap, 'exec'), {'__name__': '_publication_source_runtime'})
+
 import copy
 import importlib.util
 import json
@@ -12,8 +17,6 @@ from types import SimpleNamespace
 from unittest import mock
 
 HERE=Path(__file__).resolve().parent
-_bootstrap = HERE.parent / 'engine/source_runtime.py'
-exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 sys.path.insert(0,str(HERE.parent/'engine'))
 import pub, evidence, fidelity, preview, source_model
 spec=importlib.util.spec_from_file_location('isolation',HERE/'test-publication-isolation.py')

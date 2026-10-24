@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Build sandboxed draft previews or freeze review candidates. Publish stays closed."""
 
+# Install before filesystem imports can consume a shadowing bytecode module.
+_bootstrap = (__file__.rpartition('/')[0] or '.') + '/source_runtime.py'
+with open(_bootstrap, 'rb') as _source:
+    exec(compile(_source.read(), _bootstrap, 'exec'), {'__name__': '_publication_source_runtime'})
+
 import argparse
 import fnmatch
 import hashlib
@@ -18,8 +23,6 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-_bootstrap = ROOT / 'engine/source_runtime.py'
-exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 
 POLICY = {
     "schema_version": 3,

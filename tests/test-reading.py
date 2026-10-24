@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 """Reading presentation contracts; no C++/performance/concurrency execution."""
+# Install before filesystem imports can consume a shadowing bytecode module.
+_bootstrap = (__file__.rpartition('/')[0] or '.') + '/../engine/source_runtime.py'
+with open(_bootstrap, 'rb') as _source:
+    exec(compile(_source.read(), _bootstrap, 'exec'), {'__name__': '_publication_source_runtime'})
+
 import importlib.util
 import copy
 import json
@@ -11,8 +16,6 @@ from pathlib import Path
 
 sys.dont_write_bytecode=True
 ROOT=Path(__file__).resolve().parents[1]
-_bootstrap = ROOT / 'engine/source_runtime.py'
-exec(compile(_bootstrap.read_bytes(), str(_bootstrap), 'exec'), {'__name__': '_publication_source_runtime'})
 sys.path.insert(0,str(ROOT/'engine'))
 import preview
 spec=importlib.util.spec_from_file_location('reading',ROOT/'tools/reading-review.py')
