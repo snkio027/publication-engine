@@ -1,0 +1,371 @@
+{
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "python": {
+    "version": "3.14.8",
+    "path": "/Users/nekoreb/.local/share/uv/python/cpython-3.14.8-macos-aarch64-none/bin/python3.14",
+    "sha256": "69d5d7633be933a8e4df3c1d6ce4a4883233f0b24660ceaeb8720c4e9f368cee",
+    "base_prefix": "/Users/nekoreb/.local/share/uv/python/cpython-3.14.8-macos-aarch64-none"
+  },
+  "project": {
+    "pyproject.toml": "4d5fbc989bec0768ddc58d145f35715489434b3290a566402dd86dbc2257ed58",
+    "uv.lock": "7cf335d932d63ba24aa0eb01eb76c19f60e744a66590973f971dee127838075a",
+    ".python-version": "5abd4dc1efa09469b88916c8e4e027a8c266a9b6d06f43ac9da3e30cd00b4ab5"
+  },
+  "tools": {
+    "pandoc": {
+      "path": "/opt/homebrew/Cellar/pandoc/3.12.1/bin/pandoc",
+      "sha256": "f728a866327e2f2e4ee10f5a47feba9f53f154233a581b6539756061b44cfb68",
+      "version": "pandoc 3.12.1"
+    },
+    "lualatex": {
+      "path": "/usr/local/texlive/2026/bin/universal-darwin/luahbtex",
+      "sha256": "0abc5faeb56c8439d3d20d732b25681a0574d51280c26488b46e080f8b47508e",
+      "version": "This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)"
+    },
+    "pdftoppm": {
+      "path": "/Users/nekoreb/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+      "sha256": "de772e88ab9977ccde25def9b403bf42675d75f5dd82b19fbd7d8123ad183159",
+      "version": "pdftoppm version 26.05.0"
+    },
+    "kpsewhich": {
+      "path": "/usr/local/texlive/2026/bin/universal-darwin/kpsewhich",
+      "sha256": "821139b9acb4eed143a3d7a8ddcae415ddb06f17f055546a01ef71068478d2e2",
+      "version": "kpathsea version 6.4.2"
+    },
+    "uv": {
+      "path": "/opt/homebrew/Cellar/uv/0.13.4/bin/uv",
+      "sha256": "aebe4135292d7bbb131440baacfc31654d391f5dd9e90d2fd4d61c1ea16c9137",
+      "version": "uv 0.13.4 (Homebrew 2026-10-20 aarch64-apple-darwin)"
+    }
+  },
+  "pypdf": {
+    "version": "6.10.0",
+    "files": {
+      "pypdf/__init__.py": "612ff566b4378c13c7b1180cb2da89ac0b6cde5500a63fe530e30ae6a88b1b9c",
+      "pypdf/_cmap.py": "0b8eea205808d522a7e4bad3e222b39c6964752b58a3a3b7259904292ee09241",
+      "pypdf/_codecs/__init__.py": "035d44440b70b56ae91953b34d296b0b56b74fd1c29562c1591c067b7fcf7eed",
+      "pypdf/_codecs/_codecs.py": "e3aa11649c92c06c42269d648c87abee3b3f4d84a38f81acda2d9471edeff9e1",
+      "pypdf/_codecs/adobe_glyphs.py": "b7770314f0eac08cf5c3d07481d5738dd73c7842bd02e4639397fb95a130fdf6",
+      "pypdf/_codecs/core_font_metrics.py": "14b3d66d3678871790597820d63a397b8a972821642846397bce54d9b2c533a9",
+      "pypdf/_codecs/pdfdoc.py": "c5f4af30562cbf1b9a490d14bbdbd90ca681d16bbce61d6e0a20758bdac07145",
+      "pypdf/_codecs/std.py": "0f240cb84a40184a52f6ecb58d67f87278fe92a4a13ce0228f9b08ed0d580fc1",
+      "pypdf/_codecs/symbol.py": "9c86864089615822623cc1ebc149661871fefdf397c842af82e466b8a5dc1809",
+      "pypdf/_codecs/zapfding.py": "3d0c63c510bad7a778d711777b15713f55bc9cce10ad97e33b7966b4bc6913fb",
+      "pypdf/_crypt_providers/__init__.py": "2b767a02e5e15d579780b7adf93ba4ab682df47eba3a076ea6cbf1212d429a42",
+      "pypdf/_crypt_providers/_base.py": "fdfe77323eaf8af84464c438bcdc4de46d083a0158fa7e7f95e91ed1cfea88d5",
+      "pypdf/_crypt_providers/_cryptography.py": "f733a4933312b17e1a974454934a8cd1d29f7dc1e47b8c1f9845caf64c28450f",
+      "pypdf/_crypt_providers/_fallback.py": "bec628a30475602015feaf87add21986451cac26fa1ef44134c626d3742d094f",
+      "pypdf/_crypt_providers/_pycryptodome.py": "bb8bed2e8ecdbfa02a6513671f5a0d3425af4d86a8c1f4957febe5916def4fab",
+      "pypdf/_doc_common.py": "54a5f4cd06ba5f658a9ed175b9c6224134b3dcf9f98ab11fc4da1f36e02a262e",
+      "pypdf/_encryption.py": "319f3e012455b473ceb9c51df87f4a45f94eab902f88f14f8e5769901540a1ce",
+      "pypdf/_font.py": "50ad53071d7979e53daa4661bf38a0e1823eb6365382007eca20b414b73767bb",
+      "pypdf/_page.py": "f93c459a77c433dbd2541e94d1fdfa599e486ca5fe3e3efe9348eaf94552639c",
+      "pypdf/_page_labels.py": "bfa0a9bba3495c2f5143f05e19d866d39695f19eb3c623d1367eaa129d41b951",
+      "pypdf/_protocols.py": "eeacfdd8b55d3eb6244a97543e9029f54e065b98f13414df55ca545b052110ea",
+      "pypdf/_reader.py": "9aaa6780e62c061509f0d3b658dbdac185404fecadac01f7f9d35ac009ce2024",
+      "pypdf/_text_extraction/__init__.py": "6b7677deb4154e230a1adc2deff6df5e53e8b1b493f2bcc42e8367b74e77fd0c",
+      "pypdf/_text_extraction/_layout_mode/__init__.py": "454408c22530ce778db5c9639d533a8e445a7a6ea980fee6383dbe3019ada6fc",
+      "pypdf/_text_extraction/_layout_mode/_fixed_width_page.py": "789bde0dbc8ca281bdef4a893a13394706fd668cb2243ca7cd6a55f5aec84b6d",
+      "pypdf/_text_extraction/_layout_mode/_text_state_manager.py": "5d5ac88de4dde6349d31ec41431b34b4be48e5150e8ad4663759842ce70a626e",
+      "pypdf/_text_extraction/_layout_mode/_text_state_params.py": "872c3aa670bcba9064a055542772c7f21048207acdc22a9aa9c632cc8232afa6",
+      "pypdf/_text_extraction/_text_extractor.py": "b54a9bbc2ebd305706406501b7f63caeab1535ffbcb0c171003c8a9da8b4a232",
+      "pypdf/_utils.py": "2df8188c0ad153b97d19201bb681b3bbdbd507e7243e2d657b4eb543a7072656",
+      "pypdf/_version.py": "2416f2ebd53fb332339ad719e9569c95eedc0157bb9e1573ee0205d0d07716aa",
+      "pypdf/_writer.py": "1819e02d0b0bcd9c1fa483dc5c22e2a7849be22c93474c33c235dd6dd076a4e3",
+      "pypdf/annotations/__init__.py": "7f693ffa3027dfd082076ecac50fdef771a29e7ce40076d49e749e1899758f21",
+      "pypdf/annotations/_base.py": "79ea1cf6fdb0d798c05212978f8f25d5b07ae98801815fb6bf92085091febf0b",
+      "pypdf/annotations/_markup_annotations.py": "b162a1181086ed7f688c0bc4691304a093fe7d8e8572b94574e9ad79f219066d",
+      "pypdf/annotations/_non_markup_annotations.py": "676214bdc08e713729261497adec7ff6b8983360fae17c4543fbda735d013515",
+      "pypdf/constants.py": "9f672ef873a6a16e7feb14165442a8e36ad2249d0ff7484bd6cf33fa9174a1cb",
+      "pypdf/errors.py": "070d56f61c4eb03830ab053a628436974f89894c93aba979423542afe5b81850",
+      "pypdf/filters.py": "237c2d528bdaeccdd68233730b2a74ac634854a9899a34bcebc8d8af5c0b347f",
+      "pypdf/generic/__init__.py": "56ba9d61fb5010278f0d4dab5d532012a45a60547ccce57f7ef260a35f71feec",
+      "pypdf/generic/_appearance_stream.py": "31c0cbd2070a34df4d5cd53a64fc60b7b398a25dbe168356615980c20030e0f3",
+      "pypdf/generic/_base.py": "f488de45b70b1eb73f94b1947d564c8ee83ca3eb7af17ece35295f9c32a73e64",
+      "pypdf/generic/_data_structures.py": "35f76eb49aa9f253fb1cd3e5eb9e3875b80f9bbc2616c755e376bde054e7b782",
+      "pypdf/generic/_files.py": "36d4a4468e890608ac8b840ecab56778ef3dd5ba15b2e636e614708a3e97f510",
+      "pypdf/generic/_fit.py": "5ff8800c98f5618e0f512b52eeb1560b6c51d8b5154af2ad500932d001402033",
+      "pypdf/generic/_image_inline.py": "2a5000fd91a2446ce368f1b74af6eda8619e36a6d065517e515536302f2efd28",
+      "pypdf/generic/_image_xobject.py": "7f560334bae2f927a5faaa72ca75c0ee7c7e662493a8061433ce9338414883af",
+      "pypdf/generic/_link.py": "b4da99d86616c6a80566c948d032d97a85e59ed6b182c1c2f1791615f496c781",
+      "pypdf/generic/_outline.py": "a8a6cc5f8d8e59faa7a2922213a054cba12f7532c67b766d8da89637ce49a5a6",
+      "pypdf/generic/_rectangle.py": "94ea927c58af43180137d2d4f5aa87a313c7f1a08f4c350d81166c34451de9f7",
+      "pypdf/generic/_utils.py": "bd30c07ac7c6f9c24d0ca8a5cff91b805a1d0084f37797a3a695871a3bc2a279",
+      "pypdf/generic/_viewerpref.py": "b6a5445a6bddfc359316848ca51393b25d528a338d9ef71267e8d74e8fdc8cea",
+      "pypdf/pagerange.py": "d9bb76d634199bef5aab66d57f74d7b87f3fc06571edbf53e94acc1570842614",
+      "pypdf/papersizes.py": "e93cf9b1f34dff724e51aa58f3753e95a928867a57600d2148440d98e54b14bf",
+      "pypdf/types.py": "b09ef01f393b111fc227b90ffacf2ef5ac459e40979c5a6bf27cdc8f50314dab",
+      "pypdf/xmp.py": "00289e95b3fb680b03cb67e67b8a3d61de32ec7e0a7c46d4337494c4c97c8c8e"
+    }
+  },
+  "selected_tex_fonts": {
+    "FandolFang-Regular.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/FandolFang-Regular.otf",
+      "sha256": "d838ad32ce2244d8144f408c37fe71065aba6fbbc80759a4d2aa2033948d5bc9"
+    },
+    "FandolHei-Bold.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/FandolHei-Bold.otf",
+      "sha256": "42ca2de27b45e16a284768673b6205a5add9e17871ee0e7db9c0d03f061d96fd"
+    },
+    "FandolHei-Regular.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/FandolHei-Regular.otf",
+      "sha256": "4afa97aa8751e0118617df88272b58d43691b5cffb7ea024c4580496e9f34d28"
+    },
+    "FandolKai-Regular.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/FandolKai-Regular.otf",
+      "sha256": "ea7e7fb4f9b3ac694a68d43946e04d21deed6e8c29a7c2d3081e1a4138f2f827"
+    },
+    "FandolSong-Bold.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/FandolSong-Bold.otf",
+      "sha256": "ffa76a70e128947a4dd22151d5ee829b23e24ce3cb6fe8ad49891cd1c2d9e9b9"
+    },
+    "FandolSong-Regular.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/public/fandol/FandolSong-Regular.otf",
+      "sha256": "a3820003227d4abe31fe28b493200d94a849ccfd078b50a019264f70353020b0"
+    },
+    "SourceCodePro-Bold.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/adobe/sourcecodepro/SourceCodePro-Bold.otf",
+      "sha256": "6f5a4a46a99ad1b92a8675e98f148272c8d2476fc0eb067247dd5eea6a3ad84c"
+    },
+    "SourceCodePro-Regular.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/adobe/sourcecodepro/SourceCodePro-Regular.otf",
+      "sha256": "9f9664e2edf6f045c11e774f9bd0be6993971f2544a39061a5ce478b96b051f8"
+    },
+    "SourceSans3-Bold.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/adobe/sourcesans/SourceSans3-Bold.otf",
+      "sha256": "7776ddb9f3eb58683e59f28d558d8896b768c2d0c80799fb3f1c56c54dfd98c9"
+    },
+    "SourceSans3-Regular.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/adobe/sourcesans/SourceSans3-Regular.otf",
+      "sha256": "08df266400933d3178d081a45f94a08814c3e55b4b7dd2e0ff69cb1329f13ab6"
+    },
+    "SourceSans3-RegularIt.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/adobe/sourcesans/SourceSans3-RegularIt.otf",
+      "sha256": "430b9f0eb1170be0981706d14b6cf87122efba9d86c373bbdf69daf276421462"
+    },
+    "SourceSerif4-Bold.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/adobe/sourceserif/SourceSerif4-Bold.otf",
+      "sha256": "f5fb9a7b1611353fdfebcf8b1e46c7d9108470f25999b841816d8b643b1856ff"
+    },
+    "SourceSerif4-Regular.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/adobe/sourceserif/SourceSerif4-Regular.otf",
+      "sha256": "edf160d0d584deee8a3bb2c3371b2a7624ca63580fbe02c57c1f4c91e84d8787"
+    },
+    "SourceSerif4-RegularIt.otf": {
+      "path": "/usr/local/texlive/2026/texmf-dist/fonts/opentype/adobe/sourceserif/SourceSerif4-RegularIt.otf",
+      "sha256": "f8062257f4693e438a8e317c9fe2b4393f0d4eed84d897edcbfd733c30a1c1a1"
+    },
+    "amssymb.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/amssymb.sty",
+      "sha256": "70838b061b56569dd3ed9f339b1bdd1c78ba185de49f27ceae331c97f48b5986"
+    },
+    "array.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/tools/array.sty",
+      "sha256": "537013de60c6606caecfc2eee9b81cd95f093ebb0f99b43277775073f00d9160"
+    },
+    "bookmark.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/bookmark/bookmark.sty",
+      "sha256": "81cb5aeb52520a14445b3bdd6ee4cd6b4c32404cda6ba3106a9049b9672e7203"
+    },
+    "booktabs.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/booktabs/booktabs.sty",
+      "sha256": "3fe694a5406f84847143e56ba1841385364277cfe7694a9f4bc0072ca8656abc"
+    },
+    "calc.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/tools/calc.sty",
+      "sha256": "662f4630feb4206cfd75524b46875f58bc247d1e7df6d242424fb3977b70a5ea"
+    },
+    "enumitem.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty",
+      "sha256": "628ef5b6916c682f586a066e735ceb6191e73fe3216dfb2fb4aa8e2f4c819dba"
+    },
+    "fancyhdr.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty",
+      "sha256": "9130c52f91087abc6d223164ffa587e207e3257fcbcd069ef09ecb5391043f14"
+    },
+    "fontspec.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/fontspec/fontspec.sty",
+      "sha256": "14fdcaeea0c2f2278c03ecf0ccea5dc383a045b3d60cb4373ff2bbd800771fe6"
+    },
+    "fvextra.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/fvextra/fvextra.sty",
+      "sha256": "e91f5114fb99355111835093f4f736fa1d4887fafd09910a65db0dd1ac347fab"
+    },
+    "geometry.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty",
+      "sha256": "d541ce56a3f45e2462be958ec62a50404213f26b241c7d7ad3e812685d38f5d8"
+    },
+    "graphicx.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/graphicx.sty",
+      "sha256": "90ffc59f1718ff399539023d15a5a2b14ce7d227b101c35ed64abcc7186c9338"
+    },
+    "hyperref.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty",
+      "sha256": "16f517b35f656dc26b6917f2bbb31e3af0ccd734806b1ce0ba70efc3e7ffb41c"
+    },
+    "longtable.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/tools/longtable.sty",
+      "sha256": "aa616239c15b0d4ce13f35287cfe5309d2d53caac4f3a52fbb7a06e37f16594a"
+    },
+    "needspace.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/needspace/needspace.sty",
+      "sha256": "7ba1b3fbfa0c29b103f531acdbd8d1e73cf50d543d48c0b3fcc99beb59ba20f9"
+    },
+    "tcolorbox.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty",
+      "sha256": "c9387a7bb3ae0cb2b7d2e445f02e7edaa71e0dfde8999bb1a7218df4638de755"
+    },
+    "titlesec.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty",
+      "sha256": "82a440377f90231b37433ae1ab7d8b16479be7bc47f302064b53e85d70d59a39"
+    },
+    "xcolor.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty",
+      "sha256": "478888f8e8f00345fd645b6cdd6fa7db1e9efdd6f585b25c89bb3665d9029295"
+    },
+    "xurl.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/xurl/xurl.sty",
+      "sha256": "5cf09de8dd52b5e77a12145d4987ab4df75a304174d224aa9562eed3dd141ef3"
+    },
+    "book.cls": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/latex/base/book.cls",
+      "sha256": "b7d17b9b72b75bbb797c8e46871dabca156492ed6e4515c7bb86e573f1208a91"
+    },
+    "luatexja-fontspec.sty": {
+      "path": "/usr/local/texlive/2026/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec.sty",
+      "sha256": "b1daa7a27d32b59680ce8aded5b351c5194afcacf1af92fe47ffe620925694e3"
+    }
+  },
+  "boundary": "Selected files checked before/after. Additional .fls inputs are post-run observations, not a hermetic toolchain.",
+  "seatbelt": "WRITE_DENIAL_OBSERVED",
+  "review": {
+    "version": "12.0.0",
+    "files": {
+      "PIL/.dylibs/libXau.6.dylib": "9d036c55b6bbaf51dff63e95b1e4c4d306eff0026f6c924b7d39c4e7b5205bf2",
+      "PIL/.dylibs/libavif.16.3.0.dylib": "e1c6658e5c4f7d05bd81acfae4530a7bea6b1271da323417c95ea3fe033ba800",
+      "PIL/.dylibs/libbrotlicommon.1.1.0.dylib": "b59ef8515b15b305d6d64adb452717bb0e990ece7d1d9be041cc979e82d6bc9d",
+      "PIL/.dylibs/libbrotlidec.1.1.0.dylib": "5f5249a1327d0533375fef5a432ddc11b484a7a2cd679cfbd9866296ee9c71ab",
+      "PIL/.dylibs/libfreetype.6.dylib": "2a3a425bab663746206492983292597df71ebd8cf60f8d14e1b731dd67de0534",
+      "PIL/.dylibs/libharfbuzz.0.dylib": "7c949633ef0c0818533e6d64b1c5a929f8147812a3861e322c6a5532c2e48e33",
+      "PIL/.dylibs/libjpeg.62.4.0.dylib": "56f4034eb9560ea27561b9e457535338f2acc10cfd5aaebbc850db37361a3ed6",
+      "PIL/.dylibs/liblcms2.2.dylib": "e1979d4195d1bbf5b8d69b4279ab156d14546e536597a5094341ec787beeb18f",
+      "PIL/.dylibs/liblzma.5.dylib": "39fa1c26ee51ff21f463897949276a4cb12dce8380618ca30625ddf8dc65363a",
+      "PIL/.dylibs/libopenjp2.2.5.4.dylib": "f296c969caed39463463caf2252cf4c85190302d079532845aa4e4cd4dd38e29",
+      "PIL/.dylibs/libpng16.16.dylib": "0c5f6b654af889c47fd17d499f4b2431703e8968193c3f31125f66b76d372c7d",
+      "PIL/.dylibs/libsharpyuv.0.dylib": "8d281e8637610442aeacc8f4c247166489597eb7421a94a930053ad58ffe3ea2",
+      "PIL/.dylibs/libtiff.6.dylib": "d8c2160b9e14cdf821101a86caff2e2c0b3ba601fac820890e9e38dab1fc433b",
+      "PIL/.dylibs/libwebp.7.dylib": "20d91a95e56c0906a77f64d649569f3dcffdd5b104ed05dd10ee9f0877dec2c9",
+      "PIL/.dylibs/libwebpdemux.2.dylib": "56e2caa587b66199fa928f598df232105d17825bc0bb9a6a2b96bca827c17132",
+      "PIL/.dylibs/libwebpmux.3.dylib": "d406917fded24e5054c38199e6bcc182e04f8ef7efaf624f94b6a5d95e267491",
+      "PIL/.dylibs/libxcb.1.1.0.dylib": "6e5a6c64a7a332a03490c015fea8381abc209bc2e0c26564c785c12468a9c539",
+      "PIL/.dylibs/libz.1.3.1.zlib-ng.dylib": "6fd19464fde78b25cc0877249a7be420ec3b02b36717b6289e9ae4a989cfeb4f",
+      "PIL/AvifImagePlugin.py": "e4888332f3194172e74b7b76e5726397080d5a679548d6867d1796029f95e65a",
+      "PIL/BdfFontFile.py": "3e19597c846611f9a8adb85965e48ce5e79b1a8d448bb7cbfa547d5e57d36590",
+      "PIL/BlpImagePlugin.py": "51be2f54a0449e288d04480d8b3c52704a4ed5529b0b5c3a89e716514ed3f95b",
+      "PIL/BmpImagePlugin.py": "f9235d8f682876668a600734f1d12783acf79913db6181dece3bde211e5efad5",
+      "PIL/BufrStubImagePlugin.py": "252a838643cd3e7170d10733fa040997e0ff89208576d70bbcfca7b21289e163",
+      "PIL/ContainerIO.py": "c2406a2f618301be5f877c2bb5f4c651faa2a098a90a5fa58361b16e342b4d9c",
+      "PIL/CurImagePlugin.py": "f9612c83041b03dad0cd70741c6d0b2b557fa9bbb01e8b0f6744f62237cdf2bd",
+      "PIL/DcxImagePlugin.py": "0e1aac996ecc8e69d4493199f9292ff61cf55de5f75e8410a0097d1962c01046",
+      "PIL/DdsImagePlugin.py": "7e375f64afde42d529ffe6e3a119adfb9c20393e464e6be0e9a23e8ad721e26a",
+      "PIL/EpsImagePlugin.py": "43dd4e7fccabe95635da989c19253a93a1ef814f45827409bd6ac942bca22e75",
+      "PIL/ExifTags.py": "cd6ea4562902a2c8b2a02a3b27b47ad9ebc3de1a318ca3dc867561f29a3b0997",
+      "PIL/FitsImagePlugin.py": "fa80c99c01f5d7708ae6a3efc33f652fcd5f915d6095afed35fa8b72af332a0a",
+      "PIL/FliImagePlugin.py": "e33c47f085c15fd0c68ba74944ce98e4d31d6c0d5df7dc7af7a99c1991f11f32",
+      "PIL/FontFile.py": "4adeccc4ee50fa86a408b5a7dd9ae0aed693df04ac9806abc66f0053e1bc3287",
+      "PIL/FpxImagePlugin.py": "6977e0d1876f35e261c6a87e7fe7f6d83d4da1b43cb525428feb692c4d8f29f1",
+      "PIL/FtexImagePlugin.py": "bf623962475f340de25b7e49cca9d6af2f6fe9182faf4a1ecc654eb80ad111a7",
+      "PIL/GbrImagePlugin.py": "0032e0cb886505c0bfdd1af61ec9c8b973e852fa1fd5d76485b128e58c3c38c4",
+      "PIL/GdImageFile.py": "2cfe14c6fdd8da2bc6648c8e56e1896ab0c3552ef32ba17543a48d978c321ae4",
+      "PIL/GifImagePlugin.py": "54d4c48032513fa388cdef0956dd045d8d6032fdd7c7dd28102c5ac208021401",
+      "PIL/GimpGradientFile.py": "82aa949036ca5450ad071b7954084f4b41ed2d90d8148e8a5846948614cd344f",
+      "PIL/GimpPaletteFile.py": "8481d0f4b279ae2d21cb57bfbd961e0fe9faed459d8440e529ce2f0f181a51d8",
+      "PIL/GribStubImagePlugin.py": "23efd994ab12280368eda7544e7231ee94d4850b7ed01eb40da70b0ce566ff71",
+      "PIL/Hdf5StubImagePlugin.py": "3ae1108a31aa5704d3486e1d076bc0c90ce637e3584f6dad8ae647147d10d12c",
+      "PIL/IcnsImagePlugin.py": "76bfe9ebc936102a0e36bc370eac372128a0dfdb97a37f586379d37ec854347c",
+      "PIL/IcoImagePlugin.py": "402a36f53a21d3c517f2f11c74201a21eba2752a256cf8999429d0e2b52ed924",
+      "PIL/ImImagePlugin.py": "c28e4e2f63c07105b63304642674be375eada19cd758bf798f1f4504cee5f689",
+      "PIL/Image.py": "da768ff14324992c94eb810573972bcf8b74da75787fca6d14a7d976f6ed0474",
+      "PIL/ImageChops.py": "1848e5ca67280ed03938e788c505485fde810feb3a01785bed39922d89f6b548",
+      "PIL/ImageCms.py": "22e0a6de05caa5be44bb5927f9307c703f5724b6446bc7e99048f356a00828d9",
+      "PIL/ImageColor.py": "20603d0b6ba67840ff1334b60af8fa2ac53456eb42f51b2d58860f7bcb83b159",
+      "PIL/ImageDraw.py": "14c9f400afe0c71241601f1a7ce185d8550fd8a24f16f51fdd4669fcaac9cfb0",
+      "PIL/ImageDraw2.py": "a5d54c5bb6d5c372b0857bd1661dbc31de32fb6c457eea397c77039da62a54ae",
+      "PIL/ImageEnhance.py": "e04961cff972cb12e6c741a4487af038098d2764e4a9540f1de8f31a285950c2",
+      "PIL/ImageFile.py": "9ba49eeaafb9cec9a713b05ece9d77abe1f9176cade5de2d3bb603d3a1461f1e",
+      "PIL/ImageFilter.py": "30ed4c06b6d70e25f620018449d1a6ff4d3cedbc26499ff5e1e7008f6f288c26",
+      "PIL/ImageFont.py": "d8f182dd8235dbb18aad7620e333fbfd3ba5d8a090ddce1a8d4f0b38d54ef5b7",
+      "PIL/ImageGrab.py": "23d3c7a6c41fd95c8d5f84fc40bfbc6b014da2dc80cc1d661b14edfc8e456d31",
+      "PIL/ImageMath.py": "45097a7115c6baccdb6b82b0b5b22e7629fff14eb9b21a56ada8ebf604e7d6bc",
+      "PIL/ImageMode.py": "69a6551c088211a9ce0362b58cddc3956dcd3ca6bc0e6e672174d712bcf2166b",
+      "PIL/ImageMorph.py": "7686cedafdb0edcf128c7eecb457374cfe87b54f4eec9016433e4dbba981c588",
+      "PIL/ImageOps.py": "6c871014afccb68bdf35261370e7aca784a8f4e82c1abc2dddc1ac07bc651913",
+      "PIL/ImagePalette.py": "339b5852069d591ee6c54101cb2565ec857d40517300688a2a6021099b5d1b4c",
+      "PIL/ImagePath.py": "e72506e570948a5d4a2934c0ffc3e01a172683e9a7b9ef862b41704c19618f0e",
+      "PIL/ImageQt.py": "3d3b794cfca78162fe56ebf1fdbc271f5ec43817b7b44ee5e21b959af1903f96",
+      "PIL/ImageSequence.py": "32986092befdb1c9980609a2f5982e8437d5c07be92d25f9b995470d996b9f42",
+      "PIL/ImageShow.py": "26ed3f0dbd81e3f9f7c8a255f6c0ec17bfc702072211d5e5aba235122c35613a",
+      "PIL/ImageStat.py": "1554e26161827223d6d500fad5bec361995c0ea474752ea1b0b8eafa070a706e",
+      "PIL/ImageText.py": "ae4753ad6ea9402aae5c5393bbfd0ea017ef098882f73406ffff098c6c273d81",
+      "PIL/ImageTk.py": "6f94a7b5c9065ecd040ac2363267498370925fa02d10bb168743a1c6ee35bbf9",
+      "PIL/ImageTransform.py": "faa7a4ecfde5ccb75d717b7d716b79c3f2f5d491a9db2637009b4e7e62409037",
+      "PIL/ImageWin.py": "2d3d39c3cfef4df46b0b79fd4bda4cd1335b5ebcd92c424794226297b5eff349",
+      "PIL/ImtImagePlugin.py": "48be48aec1dc6e596dc6d5f8bff1d516162747a85a27400e77634785928c2266",
+      "PIL/IptcImagePlugin.py": "70e172e1ea6caa930e58d810dc68ff74eaedd933e36ced208c2be9fdfd665319",
+      "PIL/Jpeg2KImagePlugin.py": "21a6f25d5acd721595f6839453bf5e363192b9dab9b65be78a11629991f85400",
+      "PIL/JpegImagePlugin.py": "64cbd33194f18b6507bbcecd5dab909a12c2ded5843316b60a052161c16aef2c",
+      "PIL/JpegPresets.py": "967a961e8e032c81c8ba571d1e9d0d27b0967b11edf13df0e759082a52df9080",
+      "PIL/McIdasImagePlugin.py": "6da388903f822087828011537fc928b3ddbc3ca06e094a9861adfcbb75844bff",
+      "PIL/MicImagePlugin.py": "6a8230916572aff5fe74fbc1ea57593891776bd91dfce7ae116dec6b2e58d103",
+      "PIL/MpegImagePlugin.py": "83b05977dde45a9162e35486ff0285a22d3210fb22a08e248f8e5bd85fb756bc",
+      "PIL/MpoImagePlugin.py": "4b8e6ab7b39c63bac18d8970124d27526123e483aee73f0a54ba34eba5754411",
+      "PIL/MspImagePlugin.py": "a3193f30b503bf3278243b8e6421e49aa38f5e7886e363c73b2346c1eeb4b256",
+      "PIL/PSDraw.py": "28c0468f7bd7685a5b95a21c03d2a31454e975a978d40420818f94833aa83244",
+      "PIL/PaletteFile.py": "b2e0dd00be953258d7c38a049f5be14ede03438bdba481c6777038a313a013ab",
+      "PIL/PalmImagePlugin.py": "589d5bf08d714d20176032612299151422eed8b9696e2043e5dd47afe9b6974f",
+      "PIL/PcdImagePlugin.py": "fa09cc52a407d11f9a963b1dde7652f5e048d63ef98a3583fc765f69d13746c4",
+      "PIL/PcfFontFile.py": "0ea732c9d4203f6bed88f1738f9eca6072ee176bfed2831307e5648186072a11",
+      "PIL/PcxImagePlugin.py": "d7102ae82747df870eb0e8133e2e16bb648a4027508932d5caa68c91841950fe",
+      "PIL/PdfImagePlugin.py": "ea564ba103156c013ec75112aefe8f8064b233d51e724edee84ea9b3e610faf2",
+      "PIL/PdfParser.py": "1ebdc898b0d220ac1417a3ab4351a39409c68ba6691952d68467ca86a43f0d13",
+      "PIL/PixarImagePlugin.py": "97fe06c017749804e72176096f09a6383536bcfef07b02eee8146f887081d842",
+      "PIL/PngImagePlugin.py": "8c6b5b68632bb7dc748bd739d34361d687d0e0ceb0db75a5bbaee84eec181080",
+      "PIL/PpmImagePlugin.py": "bdbe523f422340fcc344313c8d23ed709bfd2b7461d4b733025b743e0dba8bdd",
+      "PIL/PsdImagePlugin.py": "2269cd446e1500db361804d754407943ecb2d49b2473a5d1551b59622d9f00b8",
+      "PIL/QoiImagePlugin.py": "44f3badd0b201c0b323e973187bca678c6259e356ee604f910ba2592f26dd2f7",
+      "PIL/SgiImagePlugin.py": "dd097cf6cf2fc9c3568dcc49c0cc36f2292c57d623db15a828143a7390c75c18",
+      "PIL/SpiderImagePlugin.py": "06c83aa5f64c72d6acd71631fffa0bf9966c79445e65d9cbcb96be68a1098691",
+      "PIL/SunImagePlugin.py": "1ddc64864d29c69046c5884f25f0832f0b1870ed4a8f18eda6534c15889b22f9",
+      "PIL/TarIO.py": "06a6140a10816fd17b4a1fae67cea2cf50eda32d83d286cdc069bae73d6b75cd",
+      "PIL/TgaImagePlugin.py": "daf0ec1537015011f0d55f34c2956fe2d8292c36cfafac951e2e85bdaa9fd076",
+      "PIL/TiffImagePlugin.py": "708438f31df39a6e4f1521b4d70ab0782f03254849c6b5f547ad9cf04770d498",
+      "PIL/TiffTags.py": "70c98e54fc62abc62df7d27d0c4433e2d5eef0866fb0914248bdf32431b0ddf3",
+      "PIL/WalImageFile.py": "e28e7632780cc6bf5d94c982c885eefb5d7e42910debe3117099c47f28dd7383",
+      "PIL/WebPImagePlugin.py": "87c868b0ae92589e6d02e4851426e829327f750085b610864fda2862ae935429",
+      "PIL/WmfImagePlugin.py": "cb5cf744f628cd1418f00384b3e89aae4fbe72ff37e7217dc44366edbd06357a",
+      "PIL/XVThumbImagePlugin.py": "70949aa6405ab05b75d4ee97617c6a73203e9e3c40e410f7c0784d8fa542ec59",
+      "PIL/XbmImagePlugin.py": "15de86543128ef79f2148080dd9df0e0b8e4c28656be11c1eab2829b9c95ae1a",
+      "PIL/XpmImagePlugin.py": "8ed50a6af242630200b09689c12c7cbc9b31d684db0b2c1f0f178f10d980f77c",
+      "PIL/__init__.py": "43828e12947b4bf5ec8f7d1fbceb2f47de311295f8294b15794c1a54fd5f53cd",
+      "PIL/__main__.py": "2e98f8bde7fc988ee3035b1109402855869e78f0ff51cf3df3117973b5cbc750",
+      "PIL/_avif.cpython-314-darwin.so": "4a053bda160c65afe117e194e577b9ea57bd5879527296202e024a5492ec8749",
+      "PIL/_binary.py": "a5c33a00bd381b182619e2df707d55d4164710dc08ad01f4bb1849eebd0720bd",
+      "PIL/_deprecate.py": "dadef8eee51f44b2f4ad8c4812fca4ab20da07fd5bd1e0d29f08294e1e4ee5f2",
+      "PIL/_imaging.cpython-314-darwin.so": "eac943a9072909ab4803fe192bf3764aeb6a0cd11c1ca3c2ca34ac8f4d125a81",
+      "PIL/_imagingcms.cpython-314-darwin.so": "7651a2c8d9c1e47e449f780af3f6dfb204a15a37ce9793f447ce57089cbb702e",
+      "PIL/_imagingft.cpython-314-darwin.so": "3301c7a05fd1f74b40042a5cbe0b223e40469bf59f9422f32e62e56a89ad8fbf",
+      "PIL/_imagingmath.cpython-314-darwin.so": "3a6350eac7dabcc8a1ae1c98323f3758f92fb955f31756ed773d548ef623b63b",
+      "PIL/_imagingmorph.cpython-314-darwin.so": "5f58a8eacb93a792a6730152060772069c9a35df8ff6113fd6f4fffb665434e4",
+      "PIL/_imagingtk.cpython-314-darwin.so": "40b17b6f5cc21a6c9ccfc5fc1884e0bf85a74e1ba25f280ff3411dc3eef88bc3",
+      "PIL/_tkinter_finder.py": "188678b2d985854a2c987292addc5c8d2b62a1c0cd7f2267ed10627b6496c54d",
+      "PIL/_typing.py": "db3df7654a7d6909e44aa5f3351dd99fb974e1dd96fa8023d4e899862c8517af",
+      "PIL/_util.py": "7f185676b2c04727363ec3203779bdfd4d5d637a1429b57b9a4a0771782879e0",
+      "PIL/_version.py": "3982c9db8949ca543a345a73ab72cc4529c3c80266a75a67150fdcdcf319478e",
+      "PIL/_webp.cpython-314-darwin.so": "8fc47ba819b5c11be28f3b24276dc86283d5d17564df0dbcd1698a788f56c901",
+      "PIL/features.py": "14f904863b416914aaa6480735876ec31885b7272ee0d8d92b010c5b1b5e98f5",
+      "PIL/report.py": "e0963af8853bb07d512ae45b3afcb57d4b74740a22efd157e2d609377a750d3d"
+    }
+  },
+  "status": "LOCAL_ENVIRONMENT_OBSERVED"
+}

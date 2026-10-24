@@ -1,0 +1,22 @@
+test_lock_mismatch_rejected (__main__.EnvironmentTests.test_lock_mismatch_rejected) ... ok
+test_system_or_wrong_python_rejected (__main__.EnvironmentTests.test_system_or_wrong_python_rejected) ... ok
+test_candidate_calls_binding_before_copy (__main__.EvidenceTests.test_candidate_calls_binding_before_copy) ... ok
+test_complete_manifest_passes (__main__.EvidenceTests.test_complete_manifest_passes) ... ok
+test_empty_and_duplicate_views_rejected (__main__.EvidenceTests.test_empty_and_duplicate_views_rejected) ... ok
+test_extra_or_missing_evidence_rejected (__main__.EvidenceTests.test_extra_or_missing_evidence_rejected) ... ok
+test_fast_and_legacy_results_cannot_freeze (__main__.EvidenceTests.test_fast_and_legacy_results_cannot_freeze) ... ok
+test_manifest_symlink_rejected (__main__.EvidenceTests.test_manifest_symlink_rejected) ... ok
+test_missing_planned_view_fails_before_success_commit (__main__.EvidenceTests.test_missing_planned_view_fails_before_success_commit) ... ok
+test_mutated_machine_evidence_and_png_refused (__main__.EvidenceTests.test_mutated_machine_evidence_and_png_refused) ... ok
+test_optimized_review_entrypoints_fail_closed (__main__.EvidenceTests.test_optimized_review_entrypoints_fail_closed) ... ok
+test_adapter_cannot_rewrite_oracle (__main__.FidelityTests.test_adapter_cannot_rewrite_oracle) ... ok
+test_anchor_cannot_move_to_another_heading (__main__.FidelityTests.test_anchor_cannot_move_to_another_heading) ... ok
+test_code_bytes_and_language_preserved (__main__.FidelityTests.test_code_bytes_and_language_preserved) ... ok
+test_paragraph_delete_reorder_and_table_transposition_rejected (__main__.FidelityTests.test_paragraph_delete_reorder_and_table_transposition_rejected) ... ok
+test_removed_inline_spaces_rejected_even_if_printed_projection_matches (__main__.FidelityTests.test_removed_inline_spaces_rejected_even_if_printed_projection_matches) ... ok
+test_replace_ref_cannot_change_frozen_bytes (__main__.GitReplacementTests.test_replace_ref_cannot_change_frozen_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 15.070s
+
+OK

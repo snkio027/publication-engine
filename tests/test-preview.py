@@ -160,8 +160,12 @@ class RealPreviewTests(base.Fixture, unittest.TestCase):
         return next((self.root / "publication/build/preview").glob("*/*"))
 
     def test_real_success_and_compiler_cannot_write_dist(self):
-        target = str((self.dist / "history.bin").resolve())
-        self.inject(r'\directlua{local f=io.open("' + target + r'","wb"); if f then f:write("BAD"); f:close(); error("sandbox failed") else texio.write_nl("SANDBOX_WRITE_DENIED") end}')
+        protected = [self.dist / "history.bin", self.engine / "engine/pub.py",
+                     self.root / "00-fixture.md", self.template]
+        for number, target in enumerate(protected):
+            self.inject(r'\directlua{local f=io.open("' + str(target.resolve()) +
+                        r'","wb"); if f then f:write("BAD"); f:close(); error("sandbox failed") else texio.write_nl("SANDBOX_WRITE_DENIED_' + str(number) + r'") end}')
+        original = {path: path.read_bytes() for path in protected}
         child = self.start()
         out, err = child.communicate(timeout=240)
         audits = list(self.run_path().glob('work/typeset/*/section-audit.json'))
@@ -198,7 +202,9 @@ class RealPreviewTests(base.Fixture, unittest.TestCase):
             candidate.freeze(self.output, relative, pub, "fixture")
         self.assertEqual(old, base.tree_bytes(target))
         log = self.run_path() / "work/typeset/TEST-0/document.log"
-        self.assertIn("SANDBOX_WRITE_DENIED", log.read_text())
+        for number, path in enumerate(protected):
+            self.assertIn(f"SANDBOX_WRITE_DENIED_{number}", log.read_text())
+            self.assertEqual(path.read_bytes(), original[path])
 
     def test_real_compile_failure_never_commits_ready(self):
         self.inject(r"\ThisCommandIntentionallyDoesNotExist")
