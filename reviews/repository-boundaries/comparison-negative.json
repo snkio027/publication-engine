@@ -1,0 +1,19 @@
+{
+  "status": "REJECTED_AS_EXPECTED",
+  "argv": [
+    "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/.venv/bin/python",
+    "-B",
+    "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/products/knowledge-base/check_navigation.py",
+    "--project",
+    "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/project.json",
+    "--results",
+    "/private/tmp/publication-boundaries.cDmHx0/qualification/results.json",
+    "--baseline",
+    "/private/tmp/publication-boundaries.cDmHx0/wrong-baselines.json",
+    "--output",
+    "/private/tmp/publication-boundaries.cDmHx0/must-not-exist.json"
+  ],
+  "exit_code": 1,
+  "output_exists": false,
+  "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/publication-boundaries.cDmHx0/fresh-engine/products/knowledge-base/check_navigation.py\", line 110, in <module>\n    if __name__=='__main__':main()\n                            ~~~~^^\n  File \"/private/tmp/publication-boundaries.cDmHx0/fresh-engine/products/knowledge-base/check_navigation.py\", line 68, in main\n    raise RuntimeError('baseline manifest differs from explicit binding')\nRuntimeError: baseline manifest differs from explicit binding\n"
+}

@@ -1,0 +1,77 @@
+{
+  "status": "SELF_REVIEWED_NO_NEW_BLOCKER_OBSERVED",
+  "pages": [
+    {
+      "profile": "cpp-handbook",
+      "page": 2,
+      "path": "pages/cpp-handbook/page-02.png",
+      "bytes": 79986,
+      "sha256": "6eb94b2adf8559e3561cdc7bbba91caa31f625b8059c9c9c31819ba97f7a01a9"
+    },
+    {
+      "profile": "cpp-handbook",
+      "page": 24,
+      "path": "pages/cpp-handbook/page-24.png",
+      "bytes": 85394,
+      "sha256": "01987f2078d15de6a2e88e401d0a27487ca0c2088a9ee6c62fa7736623aaab59"
+    },
+    {
+      "profile": "esd",
+      "page": 2,
+      "path": "pages/esd/page-02.png",
+      "bytes": 80053,
+      "sha256": "843c3201d6c4c1651f773585147148002bfbdb7e94d2c443bb5334ce12b36d20"
+    },
+    {
+      "profile": "esd",
+      "page": 24,
+      "path": "pages/esd/page-24.png",
+      "bytes": 58596,
+      "sha256": "691d49709591a11778e82fb21ebc43f8f96d2e6a989855df9901547a4faf8b96"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 2,
+      "path": "pages/cpp-failure-model/page-002.png",
+      "bytes": 132271,
+      "sha256": "7c7dec2cfb7b3b134354f472dff2bd1f9e0104ab1c49a449395745a661acd424"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 108,
+      "path": "pages/cpp-failure-model/page-108.png",
+      "bytes": 91288,
+      "sha256": "ec21412bcb01edaf995831618ec30a3744a9afa117e49d3405c338801f55526c"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 109,
+      "path": "pages/cpp-failure-model/page-109.png",
+      "bytes": 104610,
+      "sha256": "efdded00fd79136fcb8fead943a5b934e04dd8aacc4127dfc295de10873073c4"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 153,
+      "path": "pages/cpp-failure-model/page-153.png",
+      "bytes": 86947,
+      "sha256": "c95172e87280949950bff67c8dcf560f3bb5047b01b6f467b7bf251e8c664514"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 154,
+      "path": "pages/cpp-failure-model/page-154.png",
+      "bytes": 80718,
+      "sha256": "c3f6d4614f01e439ed7f495045838cb067ad0f0bde061291219292bb910ce3ef"
+    }
+  ],
+  "coverage": "Nine rendered pages only, not whole-book human reading or reader compatibility",
+  "observations": [
+    "Three generated identity pages inspected; identities remain those of selected historical profiles.",
+    "G6 code/prose and ESD literal-template/record representative pages remain readable.",
+    "FM long experiment identity continues across 108-109; FM-9 template continues at 154.",
+    "Existing whitespace, wrapping and historical preview labels are preserved, not redesigned."
+  ],
+  "fm_fixture_coverage": "NOT_COVERED / 0 fixtures",
+  "formal_release": false
+}

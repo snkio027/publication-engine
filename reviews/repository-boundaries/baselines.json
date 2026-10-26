@@ -1,0 +1,14 @@
+{
+  "cpp-handbook": {
+    "attempt": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/ce81692c2a0556389654c19f3cde9e09ecf601485a354463bcb73fad01861abb/9c225fb51f28428e8f87403008249561",
+    "artifact_manifest_sha256": "9954617cbadd96e968e287fd44f095e599dccf817411e04b56e5197fcc937bab"
+  },
+  "esd": {
+    "attempt": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/92c8af68fa485975313797f3380a172a47179cd14fd786627ccf7f12c8284a3a/763863929b134f32b2d0d064db6e14de",
+    "artifact_manifest_sha256": "60ed17c531095a4b946690ef2e91d09c1925876ef5a3e7b9d9305592d826ef8b"
+  },
+  "cpp-failure-model": {
+    "attempt": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/c0cf7dc10460db1633ab7e225243fbceec6c66611996e565a418ffd8fda557d3/2f2e760f55384b1da825a5280b627af0",
+    "artifact_manifest_sha256": "1adb600ea277702f52d9f7d9b31dc71f75a62382880bd6de7ea706984329e7d7"
+  }
+}

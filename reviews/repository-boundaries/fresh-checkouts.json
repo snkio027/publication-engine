@@ -1,0 +1,10 @@
+{
+  "engine_commit": "c3c00708649a2cec166a199f4178c18f699074d3",
+  "content_commit": "be9ec52d673d284a9c85f8f8607bd60b55ed3e1d",
+  "historical_build_directory_present": false,
+  "engine_status": "",
+  "content_status": "",
+  "bootstrap": "uv sync --locked --offline --group review",
+  "platform": "macOS arm64",
+  "source_note": "Local --no-hardlinks clones with full Git history; no ignored files copied; not a remote bootstrap test."
+}

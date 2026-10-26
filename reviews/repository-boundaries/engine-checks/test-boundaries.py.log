@@ -1,0 +1,12 @@
+test_case_alias_cannot_bypass_root_boundary (__main__.Contracts.test_case_alias_cannot_bypass_root_boundary) ... ok
+test_derived_tool_cannot_adopt_relocated_or_unbound_attempt (__main__.Contracts.test_derived_tool_cannot_adopt_relocated_or_unbound_attempt) ... ok
+test_lock_and_selected_inputs_are_bound_in_preparation (__main__.Contracts.test_lock_and_selected_inputs_are_bound_in_preparation) ... ok
+test_lock_cannot_be_rewritten_under_old_descriptor (__main__.Contracts.test_lock_cannot_be_rewritten_under_old_descriptor) ... ok
+test_new_undeclared_input_is_rejected (__main__.Contracts.test_new_undeclared_input_is_rejected) ... ok
+test_product_drift_after_load_is_rejected_before_output (__main__.Contracts.test_product_drift_after_load_is_rejected_before_output) ... ok
+test_root_overlap_and_link_ancestors_are_rejected (__main__.Contracts.test_root_overlap_and_link_ancestors_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 2.752s
+
+OK

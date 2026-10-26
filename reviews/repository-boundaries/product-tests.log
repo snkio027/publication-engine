@@ -1,0 +1,18 @@
+test_changed_pin_is_rejected_before_output (__main__.ConfigurationTests.test_changed_pin_is_rejected_before_output) ... ok
+test_changed_product_is_rejected_before_output (__main__.ConfigurationTests.test_changed_product_is_rejected_before_output) ... ok
+test_content_ancestor_rejected (__main__.ConfigurationTests.test_content_ancestor_rejected) ... ok
+test_content_descendant_rejected (__main__.ConfigurationTests.test_content_descendant_rejected) ... ok
+test_engine_cannot_be_content (__main__.ConfigurationTests.test_engine_cannot_be_content) ... ok
+test_existing_nonempty_workspace_is_unchanged (__main__.ConfigurationTests.test_existing_nonempty_workspace_is_unchanged) ... ok
+test_external_descriptor_and_engine_pin (__main__.ConfigurationTests.test_external_descriptor_and_engine_pin) ... ok
+test_linked_ancestor_never_touches_archive (__main__.ConfigurationTests.test_linked_ancestor_never_touches_archive) ... ok
+test_migration_record_is_not_runtime_configuration (__main__.ConfigurationTests.test_migration_record_is_not_runtime_configuration) ... ok
+test_product_and_engine_roots_rejected (__main__.ConfigurationTests.test_product_and_engine_roots_rejected) ... ok
+test_product_drift_after_configuration_is_refused (__main__.ConfigurationTests.test_product_drift_after_configuration_is_refused) ... ok
+test_product_output_entrypoints_reject_content_before_write (__main__.ConfigurationTests.test_product_output_entrypoints_reject_content_before_write) ... ok
+test_repeat_configuration_never_overwrites (__main__.ConfigurationTests.test_repeat_configuration_never_overwrites) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 4.365s
+
+OK

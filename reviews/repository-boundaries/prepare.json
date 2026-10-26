@@ -1,0 +1,116 @@
+[
+  {
+    "argv": [
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/.venv/bin/python",
+      "-B",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/engine/pub.py",
+      "preview",
+      "--prepare-only",
+      "--project",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/project.json",
+      "--profile",
+      "cpp-failure-model"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "fc65eb51579cec0f49de60356a0681abb3dcc9f1ee87919712ec5a76fec4d68a",
+      "path": "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/output/preview/fc65eb51579cec0f49de60356a0681abb3dcc9f1ee87919712ec5a76fec4d68a/200148144acf4dcdba7cde4225e63cf1"
+    }
+  },
+  {
+    "argv": [
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/.venv/bin/python",
+      "-B",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/engine/pub.py",
+      "preview",
+      "--prepare-only",
+      "--project",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/project.json",
+      "--profile",
+      "cpp-handbook"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "7d9558e38eac9ff70573dea6b31433dbb0f11df633572a218991959d51cbb0cd",
+      "path": "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/output/preview/7d9558e38eac9ff70573dea6b31433dbb0f11df633572a218991959d51cbb0cd/66e5a658c4e24474a57610303a9c2085"
+    }
+  },
+  {
+    "argv": [
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/.venv/bin/python",
+      "-B",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/engine/pub.py",
+      "preview",
+      "--prepare-only",
+      "--project",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/project.json",
+      "--profile",
+      "cpp-handbook-full"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "9b06991bfc38f077e73c6b2b6ebb39c16caa7a574a530926705465f1515af2b3",
+      "path": "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/output/preview/9b06991bfc38f077e73c6b2b6ebb39c16caa7a574a530926705465f1515af2b3/d7a17befc51d421fb0556886295dc789"
+    }
+  },
+  {
+    "argv": [
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/.venv/bin/python",
+      "-B",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/engine/pub.py",
+      "preview",
+      "--prepare-only",
+      "--project",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/project.json",
+      "--profile",
+      "cpp-handbook-rc1"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "a8cc1661bd701017a5eebec9da0d0a92107f0e83f554f578d79dd3a9a9d10e95",
+      "path": "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/output/preview/a8cc1661bd701017a5eebec9da0d0a92107f0e83f554f578d79dd3a9a9d10e95/283137fa55054105a8c9019ac3e3f216"
+    }
+  },
+  {
+    "argv": [
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/.venv/bin/python",
+      "-B",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/engine/pub.py",
+      "preview",
+      "--prepare-only",
+      "--project",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/project.json",
+      "--profile",
+      "cpp-handbook-v1"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "22af3a9ba4a98208cc4c6cbae0a304aa805ca6167c001326ada5ca33b129545f",
+      "path": "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/output/preview/22af3a9ba4a98208cc4c6cbae0a304aa805ca6167c001326ada5ca33b129545f/ab5a5b5d5b114bd7b171d96e241e56ff"
+    }
+  },
+  {
+    "argv": [
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/.venv/bin/python",
+      "-B",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/engine/pub.py",
+      "preview",
+      "--prepare-only",
+      "--project",
+      "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/project.json",
+      "--profile",
+      "esd"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "e8d5ebfd4f915e17e6f3d656c60318192c0370bb25c860cc814dc5bd32291498",
+      "path": "/private/tmp/publication-boundaries.cDmHx0/fresh-engine/tmp/current/output/preview/e8d5ebfd4f915e17e6f3d656c60318192c0370bb25c860cc814dc5bd32291498/d4b44d82b9974aad8ba80b3b22cd12ac"
+    }
+  }
+]

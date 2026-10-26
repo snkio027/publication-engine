@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "markdown_files": [
+    "README.md",
+    "PROVENANCE.md",
+    "docs/repository-boundaries.md",
+    "products/knowledge-base/README.md",
+    "reviews/repository-boundaries/README.md"
+  ],
+  "local_links": [
+    {
+      "file": "README.md",
+      "target": "products/knowledge-base/README.md"
+    },
+    {
+      "file": "README.md",
+      "target": "docs/repository-boundaries.md"
+    },
+    {
+      "file": "README.md",
+      "target": "PROVENANCE.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reviews/safety-boundaries/README.md"
+    },
+    {
+      "file": "README.md",
+      "target": "reviews/standalone/README.md"
+    },
+    {
+      "file": "PROVENANCE.md",
+      "target": "products/knowledge-base/migration.json"
+    },
+    {
+      "file": "PROVENANCE.md",
+      "target": "reviews/content-handoff/README.md"
+    },
+    {
+      "file": "PROVENANCE.md",
+      "target": "products/knowledge-base/product.json"
+    },
+    {
+      "file": "PROVENANCE.md",
+      "target": "docs/repository-boundaries.md"
+    },
+    {
+      "file": "products/knowledge-base/README.md",
+      "target": "../../docs/repository-boundaries.md"
+    },
+    {
+      "file": "products/knowledge-base/README.md",
+      "target": "product.json"
+    },
+    {
+      "file": "products/knowledge-base/README.md",
+      "target": "migration.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "../../docs/repository-boundaries.md"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "../../products/knowledge-base/product.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "engine-checks/results.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "product-tests.log"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "adapter-check.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "prepare.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "qualification/result.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "qualification/results.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "comparison.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "comparison-negative.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "visual-inspection.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "protection.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "fresh-checkouts.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "baselines.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "project.json"
+    },
+    {
+      "file": "reviews/repository-boundaries/README.md",
+      "target": "tested-inputs.json"
+    }
+  ],
+  "json_files_parsed": 38,
+  "boundary": "Local target existence, fence balance and JSON parse only; not network links, PDF acceptance or technical truth"
+}
