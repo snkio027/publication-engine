@@ -42,7 +42,9 @@ class ConfigurationTests(unittest.TestCase):
     def test_external_descriptor_and_engine_pin(self):
         path = configure.configure(self.content, self.workspace)
         config = json.loads(path.read_text())
-        self.assertEqual(config['engine']['commit'], configure.PIN)
+        lock,identity,_=configure.product_lock.inspect(configure.PRODUCT,configure.pub)
+        self.assertEqual(config['engine'],lock['engine'])
+        self.assertEqual(config['product'],identity)
         self.assertEqual(config['product_root'], str(configure.PRODUCT))
         self.assertEqual(config['content_root'], str(self.content))
         self.assertEqual(len(config['profiles']), 6)
@@ -102,9 +104,42 @@ class ConfigurationTests(unittest.TestCase):
         self.assertFalse(self.workspace.exists())
 
     def test_changed_pin_is_rejected_before_output(self):
-        with patch.object(configure, 'PIN', '0'*40), self.assertRaises(configure.pub.PreparationError):
+        with patch.object(configure.project, 'engine_snapshot', side_effect=configure.pub.PreparationError('pin')), self.assertRaises(configure.pub.PreparationError):
             configure.configure(self.content, self.workspace)
         self.assertFalse(self.workspace.exists())
+
+    def test_migration_record_is_not_runtime_configuration(self):
+        copied=self.root/'product'
+        shutil.copytree(configure.PRODUCT,copied,ignore=shutil.ignore_patterns('__pycache__'))
+        (copied/'migration.json').write_text('historical archive not loaded')
+        with patch.object(configure,'PRODUCT',copied):
+            configure.configure(self.content,self.workspace)
+
+    def test_product_drift_after_configuration_is_refused(self):
+        copied=self.root/'product'
+        shutil.copytree(configure.PRODUCT,copied,ignore=shutil.ignore_patterns('__pycache__'))
+        with patch.object(configure,'PRODUCT',copied):
+            descriptor=configure.configure(self.content,self.workspace)
+        (copied/'publication/profiles/cpp-handbook/template.tex').write_text('drift after configuration')
+        with self.assertRaisesRegex(configure.pub.PreparationError,'product lock mismatch'):
+            configure.project.load(configure.ENGINE,descriptor,'cpp-handbook',configure.pub)
+        self.assertFalse((self.workspace/'output').exists())
+
+    def test_product_output_entrypoints_reject_content_before_write(self):
+        descriptor=configure.configure(self.content,self.workspace)
+        results=self.workspace/'results.json';results.write_text(json.dumps([{'profile':'cpp-handbook'}]))
+        baseline=self.workspace/'baseline.json';baseline.write_text('{}')
+        for script,options in (
+            ('check.py',['--content',str(self.content)]),
+            ('qualify.py',['--project',str(descriptor)]),
+            ('check_navigation.py',['--project',str(descriptor),'--results',str(results),'--baseline',str(baseline)])):
+            for output in (self.content/'forbidden', configure.PRODUCT/'forbidden', configure.ENGINE/'latex/forbidden'):
+                with self.subTest(script=script,output=output):
+                    proc=subprocess.run([os.sys.executable,'-B',str(configure.PRODUCT/script),*options,
+                                         '--output',str(output)],capture_output=True)
+                    self.assertNotEqual(proc.returncode,0)
+                    self.assertIn(b'outside',proc.stderr)
+                    self.assertFalse(output.exists())
 
 
 if __name__ == '__main__':
