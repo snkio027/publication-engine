@@ -1,0 +1,83 @@
+{
+  "pages": [
+    {
+      "profile": "cpp-handbook",
+      "page": 2,
+      "file": "pages/cpp-handbook-002.png",
+      "render_sha256": "57f938f71918715aed02e1add81a2fdc75c7b1905d0209bb770a51e5c9864dca",
+      "pdf_sha256": "6e1cbd0bf6fa92ed2cc2512c9111139489be6f816b866efac4aa5ee6b04c9c94",
+      "result": "VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL"
+    },
+    {
+      "profile": "cpp-handbook",
+      "page": 24,
+      "file": "pages/cpp-handbook-024.png",
+      "render_sha256": "01987f2078d15de6a2e88e401d0a27487ca0c2088a9ee6c62fa7736623aaab59",
+      "pdf_sha256": "6e1cbd0bf6fa92ed2cc2512c9111139489be6f816b866efac4aa5ee6b04c9c94",
+      "result": "VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL"
+    },
+    {
+      "profile": "esd",
+      "page": 2,
+      "file": "pages/esd-002.png",
+      "render_sha256": "f4acd306f96702f00f032442f154e4ee7eb68e353c48227a07860031a57163d1",
+      "pdf_sha256": "c87c0a644e2f04218562fc7b0be30463b7e9aeecbf6821b597e618c6ccc2023c",
+      "result": "VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL"
+    },
+    {
+      "profile": "esd",
+      "page": 24,
+      "file": "pages/esd-024.png",
+      "render_sha256": "691d49709591a11778e82fb21ebc43f8f96d2e6a989855df9901547a4faf8b96",
+      "pdf_sha256": "c87c0a644e2f04218562fc7b0be30463b7e9aeecbf6821b597e618c6ccc2023c",
+      "result": "VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 2,
+      "file": "pages/cpp-failure-model-002.png",
+      "render_sha256": "4efb184a1ac07fa358a524464ff52e557a4c630797264ebb27a4257767733917",
+      "pdf_sha256": "ffdb7e133f8cfe1b547040ec1a7df20ea19dbc65636c3039b8565577c17fb11d",
+      "result": "VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 108,
+      "file": "pages/cpp-failure-model-108.png",
+      "render_sha256": "ec21412bcb01edaf995831618ec30a3744a9afa117e49d3405c338801f55526c",
+      "pdf_sha256": "ffdb7e133f8cfe1b547040ec1a7df20ea19dbc65636c3039b8565577c17fb11d",
+      "result": "VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 109,
+      "file": "pages/cpp-failure-model-109.png",
+      "render_sha256": "efdded00fd79136fcb8fead943a5b934e04dd8aacc4127dfc295de10873073c4",
+      "pdf_sha256": "ffdb7e133f8cfe1b547040ec1a7df20ea19dbc65636c3039b8565577c17fb11d",
+      "result": "VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 153,
+      "file": "pages/cpp-failure-model-153.png",
+      "render_sha256": "c95172e87280949950bff67c8dcf560f3bb5047b01b6f467b7bf251e8c664514",
+      "pdf_sha256": "ffdb7e133f8cfe1b547040ec1a7df20ea19dbc65636c3039b8565577c17fb11d",
+      "result": "VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "page": 154,
+      "file": "pages/cpp-failure-model-154.png",
+      "render_sha256": "c3f6d4614f01e439ed7f495045838cb067ad0f0bde061291219292bb910ce3ef",
+      "pdf_sha256": "ffdb7e133f8cfe1b547040ec1a7df20ea19dbc65636c3039b8565577c17fb11d",
+      "result": "VISUAL_REVIEWED_SELF_REVIEW_NOT_APPROVAL"
+    }
+  ],
+  "count": 9,
+  "finding": "No migration-introduced clipping, glyph, role or layout blocker on the inspected pages. Frozen non-blocking limitations retained.",
+  "not_run": [
+    "reader compatibility",
+    "new typography acceptance",
+    "C++ technical experiments"
+  ]
+}

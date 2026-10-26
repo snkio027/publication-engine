@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "repository_id": 1334077602,
+  "canonical_name": "snkio027/knowledge-base",
+  "old_name_redirects_to_same_repository": true,
+  "visibility": "public",
+  "releases": [
+    {
+      "id": 397584603,
+      "tag_name": "cpp-handbook-v1.0.0",
+      "target_commitish": "54f193f46a3af12266acc898829e23f4ab27dbde",
+      "draft": false,
+      "prerelease": false
+    },
+    {
+      "id": 397630939,
+      "tag_name": "cpp-failure-model-v1.0.0",
+      "target_commitish": "d5629f05d00fd902c0462de181b3e359c4270cc1",
+      "draft": false,
+      "prerelease": false
+    }
+  ],
+  "assets": {
+    "592584449": [
+      "Modern-Cpp-Engineering-Handbook-v1.0.0.pdf",
+      2735594,
+      "ce4f6d5f6e4b8c1e2789eedd1fc151462d31e929b724ce2eb95c780f90766510"
+    ],
+    "592584448": [
+      "release-manifest.json",
+      3737,
+      "3ee22af9ac492db54c35f5a068f72c2a8a87dcc377bb4608ab6099bc36e65075"
+    ],
+    "592584450": [
+      "RELEASE-NOTES.md",
+      2416,
+      "bae59996969d9000686efaeaacbc37063e69342dd3f202bef0af208303dd1dcc"
+    ],
+    "592584447": [
+      "SHA256SUMS",
+      280,
+      "b936f56e9fe2eaa39eb343fa32b22bc51149e417c22a57f68e11322cd8da223a"
+    ],
+    "592832091": [
+      "Modern-Cpp-Failure-Semantics-Handbook-v1.0.0.pdf",
+      1406227,
+      "2957aab0ad153873307a83af9383f08dabcfb3caae8c5f27750a6f48ee3c4e9c"
+    ],
+    "592832092": [
+      "release-manifest.json",
+      2661,
+      "53ea1022d04318289dd5e46d101108fe75945e6ae5ae516d7610bca94834d562"
+    ],
+    "592832086": [
+      "RELEASE-NOTES.md",
+      2394,
+      "b6e164ffedec3c42e5f940260081a6cc71ae2237a25b81b61b5b3e38f466c334"
+    ],
+    "592832089": [
+      "SHA256SUMS",
+      286,
+      "1ad2b98d679471a2f110d1525a1e73c876ec4fe61eb37a08471816160a91dbd5"
+    ]
+  },
+  "tag_refs": [
+    "d190273cbd26d0aed13eb1bb1816bf40ddeeb73d\trefs/tags/cpp-failure-model-v1.0.0",
+    "d5629f05d00fd902c0462de181b3e359c4270cc1\trefs/tags/cpp-failure-model-v1.0.0^{}",
+    "8571b08ac95a30aadbc80f79cf46a1b060955b8d\trefs/tags/cpp-handbook-v1.0.0",
+    "54f193f46a3af12266acc898829e23f4ab27dbde\trefs/tags/cpp-handbook-v1.0.0^{}"
+  ],
+  "boundary": "Compared GitHub-reported asset ID/name/size/digest to the pre-rename observation; no asset download rerun or new release."
+}

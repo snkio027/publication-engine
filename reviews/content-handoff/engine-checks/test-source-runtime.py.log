@@ -1,0 +1,12 @@
+test_counterexample_cache_is_executable_without_policy (__main__.SourceRuntimeTests.test_counterexample_cache_is_executable_without_policy) ... ok
+test_explicit_source_loader_ignores_unchecked_cache (__main__.SourceRuntimeTests.test_explicit_source_loader_ignores_unchecked_cache) ... ok
+test_review_entrypoints_ignore_poisoned_evidence_cache (__main__.SourceRuntimeTests.test_review_entrypoints_ignore_poisoned_evidence_cache) ... ok
+test_sourceless_cache_fails_without_executing (__main__.SourceRuntimeTests.test_sourceless_cache_fails_without_executing) ... ok
+test_startup_shadow_bytecode_rejected_before_stdlib_imports (__main__.SourceRuntimeTests.test_startup_shadow_bytecode_rejected_before_stdlib_imports) ... ok
+test_timestamp_cache_ignored_even_with_matching_source_stat (__main__.SourceRuntimeTests.test_timestamp_cache_ignored_even_with_matching_source_stat) ... ok
+test_unchecked_caches_cannot_change_behavior_or_identity (__main__.SourceRuntimeTests.test_unchecked_caches_cannot_change_behavior_or_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 6.637s
+
+OK

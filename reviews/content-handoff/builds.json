@@ -1,0 +1,294 @@
+[
+  {
+    "profile": "cpp-handbook",
+    "attempt": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/ce81692c2a0556389654c19f3cde9e09ecf601485a354463bcb73fad01861abb/9c225fb51f28428e8f87403008249561",
+    "preview_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+        "--project",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+        "preview",
+        "--profile",
+        "cpp-handbook",
+        "--view",
+        "G6"
+      ],
+      "exit_code": 0,
+      "seconds": 33.14
+    },
+    "candidate": {
+      "status": "CANDIDATE_PREPARED_FOR_REVIEW",
+      "candidate_id": "b50b17f4d4ef0b942c7e468a8c94f4fb622ec3317103e38aa5f0e80cdc62f6f6",
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/candidate/b50b17f4d4ef0b942c7e468a8c94f4fb622ec3317103e38aa5f0e80cdc62f6f6/44cade653e0f4dd490a2379e8a257982"
+    },
+    "candidate_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+        "--project",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+        "candidate",
+        "--profile",
+        "cpp-handbook",
+        "--from-preview",
+        "preview/ce81692c2a0556389654c19f3cde9e09ecf601485a354463bcb73fad01861abb/9c225fb51f28428e8f87403008249561"
+      ],
+      "exit_code": 0,
+      "seconds": 0.557
+    },
+    "ready": {
+      "artifact_manifest_sha256": "9954617cbadd96e968e287fd44f095e599dccf817411e04b56e5197fcc937bab",
+      "artifacts": {
+        "output/pdf/G6-draft.pdf": "6e1cbd0bf6fa92ed2cc2512c9111139489be6f816b866efac4aa5ee6b04c9c94"
+      },
+      "audit_sha256": "7f04f57bfaa21a22c1e24e3b6b27d56fca0f4f4aae8c2855fdcbd0efa4219bec",
+      "checks": "See work/preview-audit.json",
+      "commit_protocol": "file-fsync-then-no-replace-link-v1",
+      "evidence_schema": 1,
+      "execution_id": "c555718537e1e0198fdd986342977bcd04282bc37d70d0699f6cdfd53f4b15fb",
+      "meaning": "Draft reading artifacts; not formal publication or visual approval",
+      "mode": "FULL_PREVIEW",
+      "schema_version": 2,
+      "status": "PREVIEW_READY"
+    },
+    "pages": 48,
+    "artifact_files": 84,
+    "reading": {
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/ce81692c2a0556389654c19f3cde9e09ecf601485a354463bcb73fad01861abb/9c225fb51f28428e8f87403008249561/work/reading-regression",
+      "status": "STRUCTURAL_PASS",
+      "fixtures": 3,
+      "issues": []
+    },
+    "reading_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/reading-review.py",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/ce81692c2a0556389654c19f3cde9e09ecf601485a354463bcb73fad01861abb/9c225fb51f28428e8f87403008249561",
+        "--corpus",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/products/knowledge-base/publication/tools/reading-corpus.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.979
+    },
+    "sheets_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/inspect-pages.py",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/ce81692c2a0556389654c19f3cde9e09ecf601485a354463bcb73fad01861abb/9c225fb51f28428e8f87403008249561"
+      ],
+      "exit_code": 0,
+      "seconds": 0.422
+    },
+    "comparison": {
+      "baseline_attempt": "publication/build/preview/4e80ae418082e396dd960e54f53310f3733fb2b2a5872af69bfc5677a853c0eb/5153e3a3929c49b1affa36d0dfa4e0e8",
+      "source_ast_files_identical": 6,
+      "page_count_identical": 48,
+      "destination_positions_identical": 932,
+      "text_identical_except_generated_identity": true,
+      "png_changed_pages": [
+        2
+      ],
+      "png_unchanged_pages": 47,
+      "meaning": "Image changes are review signals, not automatic failures or visual approval."
+    }
+  },
+  {
+    "profile": "esd",
+    "attempt": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/92c8af68fa485975313797f3380a172a47179cd14fd786627ccf7f12c8284a3a/763863929b134f32b2d0d064db6e14de",
+    "preview_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+        "--project",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+        "preview",
+        "--profile",
+        "esd",
+        "--view",
+        "ESD-REFERENCE-001"
+      ],
+      "exit_code": 0,
+      "seconds": 36.029
+    },
+    "candidate": {
+      "status": "CANDIDATE_PREPARED_FOR_REVIEW",
+      "candidate_id": "3a1d0b356f5783c8701ad04c6fecc993e956e34d9fa6c193199c256ac6191f5e",
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/candidate/3a1d0b356f5783c8701ad04c6fecc993e956e34d9fa6c193199c256ac6191f5e/52f3e66ef96e483fa42512b9e2bf9562"
+    },
+    "candidate_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+        "--project",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+        "candidate",
+        "--profile",
+        "esd",
+        "--from-preview",
+        "preview/92c8af68fa485975313797f3380a172a47179cd14fd786627ccf7f12c8284a3a/763863929b134f32b2d0d064db6e14de"
+      ],
+      "exit_code": 0,
+      "seconds": 0.595
+    },
+    "ready": {
+      "artifact_manifest_sha256": "60ed17c531095a4b946690ef2e91d09c1925876ef5a3e7b9d9305592d826ef8b",
+      "artifacts": {
+        "output/pdf/ESD-REFERENCE-001-draft.pdf": "c87c0a644e2f04218562fc7b0be30463b7e9aeecbf6821b597e618c6ccc2023c"
+      },
+      "audit_sha256": "35bebe8b604b8e15cfb287f93dc0c977fc51d3cf89a5a04c3361cd4a483a956f",
+      "checks": "See work/preview-audit.json",
+      "commit_protocol": "file-fsync-then-no-replace-link-v1",
+      "evidence_schema": 1,
+      "execution_id": "69fad534703ed7ff19269891bac40477b743c6d08702cc034181cc7b743d854b",
+      "meaning": "Draft reading artifacts; not formal publication or visual approval",
+      "mode": "FULL_PREVIEW",
+      "schema_version": 2,
+      "status": "PREVIEW_READY"
+    },
+    "pages": 58,
+    "artifact_files": 110,
+    "reading": {
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/92c8af68fa485975313797f3380a172a47179cd14fd786627ccf7f12c8284a3a/763863929b134f32b2d0d064db6e14de/work/reading-regression",
+      "status": "STRUCTURAL_PASS",
+      "fixtures": 3,
+      "issues": []
+    },
+    "reading_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/reading-review.py",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/92c8af68fa485975313797f3380a172a47179cd14fd786627ccf7f12c8284a3a/763863929b134f32b2d0d064db6e14de",
+        "--corpus",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/products/knowledge-base/publication/tools/reading-corpus.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.058
+    },
+    "sheets_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/inspect-pages.py",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/92c8af68fa485975313797f3380a172a47179cd14fd786627ccf7f12c8284a3a/763863929b134f32b2d0d064db6e14de"
+      ],
+      "exit_code": 0,
+      "seconds": 0.503
+    },
+    "comparison": {
+      "baseline_attempt": "publication/build/preview/4421f9515b759671126bab7c604d16e1bc77e43a7fe96e1a7085dea224929ca8/c6455634530143c3bb4f0bb6b2363e3f",
+      "source_ast_files_identical": 18,
+      "page_count_identical": 58,
+      "destination_positions_identical": 1360,
+      "text_identical_except_generated_identity": true,
+      "png_changed_pages": [
+        2
+      ],
+      "png_unchanged_pages": 57,
+      "meaning": "Image changes are review signals, not automatic failures or visual approval."
+    }
+  },
+  {
+    "profile": "cpp-failure-model",
+    "attempt": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/c0cf7dc10460db1633ab7e225243fbceec6c66611996e565a418ffd8fda557d3/2f2e760f55384b1da825a5280b627af0",
+    "preview_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+        "--project",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+        "preview",
+        "--profile",
+        "cpp-failure-model"
+      ],
+      "exit_code": 0,
+      "seconds": 72.778
+    },
+    "candidate": {
+      "status": "CANDIDATE_PREPARED_FOR_REVIEW",
+      "candidate_id": "f1c1ac7dcfd6a95124eaff85fa8c71241fb0f1fa3f77d566d4c6d270be482eb2",
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/candidate/f1c1ac7dcfd6a95124eaff85fa8c71241fb0f1fa3f77d566d4c6d270be482eb2/c0debf3225e841b88c31cc0916afb549"
+    },
+    "candidate_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+        "--project",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+        "candidate",
+        "--profile",
+        "cpp-failure-model",
+        "--from-preview",
+        "preview/c0cf7dc10460db1633ab7e225243fbceec6c66611996e565a418ffd8fda557d3/2f2e760f55384b1da825a5280b627af0"
+      ],
+      "exit_code": 0,
+      "seconds": 0.735
+    },
+    "ready": {
+      "artifact_manifest_sha256": "1adb600ea277702f52d9f7d9b31dc71f75a62382880bd6de7ea706984329e7d7",
+      "artifacts": {
+        "output/pdf/Modern-Cpp-Failure-Semantics-Handbook-v1.0.0.pdf": "ffdb7e133f8cfe1b547040ec1a7df20ea19dbc65636c3039b8565577c17fb11d"
+      },
+      "audit_sha256": "4c9f57c29154cfd864e330c96d5371a3055727f57cd9ac2b9d186bf3d6dc15d0",
+      "checks": "See work/preview-audit.json",
+      "commit_protocol": "file-fsync-then-no-replace-link-v1",
+      "evidence_schema": 1,
+      "execution_id": "15c46c8af820ce9546caf6c7ffe7c0a7ea847cf8456ea4c29d4fecc5bbcc68ec",
+      "meaning": "Draft reading artifacts; not formal publication or visual approval",
+      "mode": "FULL_PREVIEW",
+      "schema_version": 2,
+      "status": "PREVIEW_READY"
+    },
+    "pages": 158,
+    "artifact_files": 230,
+    "reading": {
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/c0cf7dc10460db1633ab7e225243fbceec6c66611996e565a418ffd8fda557d3/2f2e760f55384b1da825a5280b627af0/work/reading-regression",
+      "status": "NOT_COVERED",
+      "fixtures": 0,
+      "issues": []
+    },
+    "reading_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/reading-review.py",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/c0cf7dc10460db1633ab7e225243fbceec6c66611996e565a418ffd8fda557d3/2f2e760f55384b1da825a5280b627af0",
+        "--corpus",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/products/knowledge-base/publication/tools/reading-corpus.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.861
+    },
+    "sheets_command": {
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tools/inspect-pages.py",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/c0cf7dc10460db1633ab7e225243fbceec6c66611996e565a418ffd8fda557d3/2f2e760f55384b1da825a5280b627af0"
+      ],
+      "exit_code": 0,
+      "seconds": 1.014
+    },
+    "comparison": {
+      "baseline_attempt": "publication/build/preview/d6f75828392ed72e73b09953e0e8c6060f60e6eec57d2d3b923058f52eacf525/fc83a249ee8e43029c9db75b4d34d7c0",
+      "source_ast_files_identical": 33,
+      "page_count_identical": 158,
+      "destination_positions_identical": 3239,
+      "text_identical_except_generated_identity": true,
+      "png_changed_pages": [
+        2
+      ],
+      "png_unchanged_pages": 157,
+      "meaning": "Image changes are review signals, not automatic failures or visual approval."
+    }
+  }
+]

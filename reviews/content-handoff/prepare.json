@@ -1,0 +1,122 @@
+[
+  {
+    "profile": "cpp-failure-model",
+    "argv": [
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+      "-B",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+      "--project",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+      "preview",
+      "--profile",
+      "cpp-failure-model",
+      "--prepare-only"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "8ca20bbeb4a5c2db3c44fceaa97976b6021ba52813b692b83d46ff72f251cca0",
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/8ca20bbeb4a5c2db3c44fceaa97976b6021ba52813b692b83d46ff72f251cca0/e176239ff59b4ba2b25ca73080143e8e"
+    }
+  },
+  {
+    "profile": "cpp-handbook",
+    "argv": [
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+      "-B",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+      "--project",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+      "preview",
+      "--profile",
+      "cpp-handbook",
+      "--prepare-only"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "ca861740c1677319951877a8ed937fde86627c875a199e2e27ca7adf91484e59",
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/ca861740c1677319951877a8ed937fde86627c875a199e2e27ca7adf91484e59/48f478b5574942288a4d8c3ac32024be"
+    }
+  },
+  {
+    "profile": "cpp-handbook-full",
+    "argv": [
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+      "-B",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+      "--project",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+      "preview",
+      "--profile",
+      "cpp-handbook-full",
+      "--prepare-only"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "f685bfbd00d16d78a657ef71ab36d9bf70de713235d7752ce7c065f2b881e935",
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/f685bfbd00d16d78a657ef71ab36d9bf70de713235d7752ce7c065f2b881e935/eb2b0627597e48c2b74d35877dfdeea9"
+    }
+  },
+  {
+    "profile": "cpp-handbook-rc1",
+    "argv": [
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+      "-B",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+      "--project",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+      "preview",
+      "--profile",
+      "cpp-handbook-rc1",
+      "--prepare-only"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "e6995a9178786b947abd46d6ce79b6ce34e48fc094987c9b5c5771cdb7c2af5b",
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/e6995a9178786b947abd46d6ce79b6ce34e48fc094987c9b5c5771cdb7c2af5b/79775d38141942ba933947ec59dcd7ee"
+    }
+  },
+  {
+    "profile": "cpp-handbook-v1",
+    "argv": [
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+      "-B",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+      "--project",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+      "preview",
+      "--profile",
+      "cpp-handbook-v1",
+      "--prepare-only"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "ef4ce0a5de62de0e193ae2bf9f35698c79c317cd06573f46f0284b92667238df",
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/ef4ce0a5de62de0e193ae2bf9f35698c79c317cd06573f46f0284b92667238df/1578b364c5c4491e99e4fc146b2b1ca0"
+    }
+  },
+  {
+    "profile": "esd",
+    "argv": [
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+      "-B",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/engine/pub.py",
+      "--project",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/project.json",
+      "preview",
+      "--profile",
+      "esd",
+      "--prepare-only"
+    ],
+    "exit_code": 0,
+    "result": {
+      "status": "PREPARED",
+      "build_id": "573cd39231627efe1139ce353d4fbf56d4fa634bcd0c8aefd7b629551c92bbe9",
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/tmp/knowledge-base-20261026/output/preview/573cd39231627efe1139ce353d4fbf56d4fa634bcd0c8aefd7b629551c92bbe9/13e77ee6108b48e085ff21f79eab9919"
+    }
+  }
+]

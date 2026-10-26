@@ -1,0 +1,20 @@
+test_cancel_during_snapshot_copy (__main__.IsolationTests.test_cancel_during_snapshot_copy) ... ok
+test_engine_and_content_commits_are_not_interchangeable (__main__.IsolationTests.test_engine_and_content_commits_are_not_interchangeable) ... ok
+test_engine_pin_mismatch_rejected (__main__.IsolationTests.test_engine_pin_mismatch_rejected) ... ok
+test_error_after_prepare_commit_retains_fact (__main__.IsolationTests.test_error_after_prepare_commit_retains_fact) ... ok
+test_git_filter_never_runs (__main__.IsolationTests.test_git_filter_never_runs) ... ok
+test_live_roots_and_descriptor_drift (__main__.IsolationTests.test_live_roots_and_descriptor_drift) ... ok
+test_missing_view_and_namespace_collision_rejected (__main__.IsolationTests.test_missing_view_and_namespace_collision_rejected) ... ok
+test_nonempty_output_not_adopted (__main__.IsolationTests.test_nonempty_output_not_adopted) ... ok
+test_output_parent_symlink_rejected (__main__.IsolationTests.test_output_parent_symlink_rejected) ... ok
+test_output_root_and_ancestor_rejected (__main__.IsolationTests.test_output_root_and_ancestor_rejected) ... ok
+test_prepare_fsync_failure_has_no_success (__main__.IsolationTests.test_prepare_fsync_failure_has_no_success) ... ok
+test_profile_and_dependency_traversal_rejected (__main__.IsolationTests.test_profile_and_dependency_traversal_rejected) ... ok
+test_separate_roots_and_unrelated_working_directory (__main__.IsolationTests.test_separate_roots_and_unrelated_working_directory) ... ok
+test_three_separate_input_roots (__main__.IsolationTests.test_three_separate_input_roots) ... ok
+test_untracked_engine_input_rejected (__main__.IsolationTests.test_untracked_engine_input_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 7.402s
+
+OK

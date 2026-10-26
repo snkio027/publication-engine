@@ -1,0 +1,38 @@
+{
+  "product-configure": {
+    "argv": [
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+      "-B",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/products/knowledge-base/test-configure.py"
+    ],
+    "exit_code": 0
+  },
+  "source-docs": {
+    "argv": [
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+      "-B",
+      "/Users/nekoreb/Workspace/03_Projects/kb/c++/learning/check_docs.py"
+    ],
+    "exit_code": 0
+  },
+  "content-diff": {
+    "argv": [
+      "git",
+      "-C",
+      "/Users/nekoreb/Workspace/03_Projects/kb",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0
+  },
+  "engine-diff": {
+    "argv": [
+      "git",
+      "-C",
+      "/Users/nekoreb/Workspace/03_Projects/publication-engine",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0
+  }
+}

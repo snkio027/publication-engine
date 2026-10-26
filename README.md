@@ -4,6 +4,8 @@
 
 本项目从 `snkio027/kb@7fb0ad0c85a4835fabe6482a9e73828d81f25b6a` 抽取。首批独立化不改变 Visual Profile v1.0、Lua/LaTeX 规则或正文。源仓库保留产品 adapter/profile、内容历史、审核和发布资产；本项目只维护通用引擎、共享视觉机械与通用回归。参见 [来源与迁移边界](PROVENANCE.md)。
 
+2026-10-26：知识库内容仓库更名为 `snkio027/knowledge-base`，并迁出全部活动出版代码与产品配置。六个书籍 profile 及消费端回归由 [knowledge-base 产品包](products/knowledge-base/README.md) 接管；内容 checkout 只读，新工作区位于其外。通用引擎、Visual Profile、Python 锁和历史审核证据不变。本批结果见[接管验证](reviews/content-handoff/README.md)。下文来源叙述保留首次独立化的历史范围，不表示产品仍在内容仓库维护。
+
 ## 支持范围
 
 - macOS Seatbelt；没有无沙箱回退，不声明 Linux/Windows/CI 支持。

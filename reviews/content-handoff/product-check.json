@@ -1,0 +1,431 @@
+{
+  "status": "PASS",
+  "engine_pin": {
+    "repository": "https://github.com/snkio027/publication-engine",
+    "commit": "df3fcc238f03a3832de55bc128049adebe323969"
+  },
+  "unchanged_files": [
+    "latex/kb-base.sty",
+    "latex/kbbook.cls",
+    "engine/filters/blocks.lua",
+    "engine/preview_audit.py",
+    "engine/links.py"
+  ],
+  "unchanged_visual_functions": [
+    "bind_code_roles",
+    "build_view",
+    "code_labels",
+    "compose",
+    "tables_to_records"
+  ],
+  "source_adapter_checks": [
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-GUIDE",
+      "source_sha256": "93c63386c5bd733abbda857eba68d4a67d59ff712d94680ddca6209290c4fb8c",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-0",
+      "source_sha256": "a00c746ca09ea0743d14f9276f5b018f4f32e66855a1929af3309de4707d31de",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-1",
+      "source_sha256": "8f68e5c28eb597c516947eda3298f86c52d60d40ea1c957a0df22255df8f54aa",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-2",
+      "source_sha256": "7232a6bceef7cd9b0ecf33c65120d84b15f8b6c204f25ba62a430ade46c69bb5",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-3",
+      "source_sha256": "08c927bb33ea3d2a8fb44a1edb19b72d9f846fd0798f3ebab40c5edbb5ee545b",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-4",
+      "source_sha256": "cd2160897b52611820f5df858a1b566173984c6f6b55db6600da5ffe135860ad",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-5",
+      "source_sha256": "4ca73c87b7fdb6bfa575f6022f94c09e5e80ddb4b3c43d1db431a5bf7109bdb1",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-6",
+      "source_sha256": "9890155cb4a9ad661eec43b242cab5c4cda550416fa39e2c58e215b117cd2159",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-7",
+      "source_sha256": "0a5c893df6c5a5de99e3041d50503eb001022ae3363da0c1daf51325fa9cca60",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-8",
+      "source_sha256": "5ca73b850dfaf56b2433ffc4db8bd9b4b7e002e8d906b015117ba01af2cfbfc3",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-failure-model",
+      "source": "FM-9",
+      "source_sha256": "d8b69e6774b221e3ba58dd76e13801382a9daa8a3ff8e574214d484356b2077e",
+      "revision": "45b305eace0f057420587d685cb3f962f3f0552c",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook",
+      "source": "G6",
+      "source_sha256": "adcf479bb9e41ee6d87d2fcd94325c8399f142b1ae8221e21e0870a991105d66",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook",
+      "source": "G7",
+      "source_sha256": "c3f8d4376cffb9bbc196905eb82e703ac5943ae629a89bade72089f2ed534730",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G0",
+      "source_sha256": "49007f1ebfe3c09f370151d3981343684821360065115a578fa34a58344ffe4f",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G1",
+      "source_sha256": "6e5494789eb37e653eaa348efbdcc4db91f786e9a9227bfc27d3b105f072af63",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G2",
+      "source_sha256": "da460e19cebe905fb0f80122461477efa4640535612f794d1a2b8088a6d79bc4",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G3",
+      "source_sha256": "c7042c0b6295a8ba223e11ff7c63bcde15ba0e21e934b8f8ed4da7bab8f754d1",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G4",
+      "source_sha256": "53dbd8b53b67bff52833ed7d248f58f4c0887ac6c0bea76e0d42d3fe2282d9ac",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G5",
+      "source_sha256": "102f54bf14ed4be0a48b2fe713e3ae10e129201758541c7706bc6ce1f7364ea1",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G6",
+      "source_sha256": "adcf479bb9e41ee6d87d2fcd94325c8399f142b1ae8221e21e0870a991105d66",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G7",
+      "source_sha256": "c3f8d4376cffb9bbc196905eb82e703ac5943ae629a89bade72089f2ed534730",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G8",
+      "source_sha256": "1ce5abaceb77a9f5a130d9358c1bdf0325adcf974029542aece870453d56553c",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G9",
+      "source_sha256": "0b1f75f2710424e0577cb6fa9930ec417c8263654bfa229aeccd5324138ecc08",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G10",
+      "source_sha256": "9e979848f5cd994feef71bd375feaef05607be23b7bbb69ca74c4575b98f4bd2",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G11",
+      "source_sha256": "5da29496b72c0074189073c4dbce02b681f9519e6ff5540c895a985a949e88b8",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-full",
+      "source": "G12",
+      "source_sha256": "6d077a806ebe606f9ebac7474e960f0f2fef2c9100a16d266dbcb3cb89775dce",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G0",
+      "source_sha256": "49007f1ebfe3c09f370151d3981343684821360065115a578fa34a58344ffe4f",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G1",
+      "source_sha256": "6e5494789eb37e653eaa348efbdcc4db91f786e9a9227bfc27d3b105f072af63",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G2",
+      "source_sha256": "da460e19cebe905fb0f80122461477efa4640535612f794d1a2b8088a6d79bc4",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G3",
+      "source_sha256": "c7042c0b6295a8ba223e11ff7c63bcde15ba0e21e934b8f8ed4da7bab8f754d1",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G4",
+      "source_sha256": "53dbd8b53b67bff52833ed7d248f58f4c0887ac6c0bea76e0d42d3fe2282d9ac",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G5",
+      "source_sha256": "102f54bf14ed4be0a48b2fe713e3ae10e129201758541c7706bc6ce1f7364ea1",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G6",
+      "source_sha256": "adcf479bb9e41ee6d87d2fcd94325c8399f142b1ae8221e21e0870a991105d66",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G7",
+      "source_sha256": "c3f8d4376cffb9bbc196905eb82e703ac5943ae629a89bade72089f2ed534730",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G8",
+      "source_sha256": "1ce5abaceb77a9f5a130d9358c1bdf0325adcf974029542aece870453d56553c",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G9",
+      "source_sha256": "0b1f75f2710424e0577cb6fa9930ec417c8263654bfa229aeccd5324138ecc08",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G10",
+      "source_sha256": "9e979848f5cd994feef71bd375feaef05607be23b7bbb69ca74c4575b98f4bd2",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G11",
+      "source_sha256": "5da29496b72c0074189073c4dbce02b681f9519e6ff5540c895a985a949e88b8",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-rc1",
+      "source": "G12",
+      "source_sha256": "6d077a806ebe606f9ebac7474e960f0f2fef2c9100a16d266dbcb3cb89775dce",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G0",
+      "source_sha256": "49007f1ebfe3c09f370151d3981343684821360065115a578fa34a58344ffe4f",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G1",
+      "source_sha256": "6e5494789eb37e653eaa348efbdcc4db91f786e9a9227bfc27d3b105f072af63",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G2",
+      "source_sha256": "da460e19cebe905fb0f80122461477efa4640535612f794d1a2b8088a6d79bc4",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G3",
+      "source_sha256": "c7042c0b6295a8ba223e11ff7c63bcde15ba0e21e934b8f8ed4da7bab8f754d1",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G4",
+      "source_sha256": "53dbd8b53b67bff52833ed7d248f58f4c0887ac6c0bea76e0d42d3fe2282d9ac",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G5",
+      "source_sha256": "102f54bf14ed4be0a48b2fe713e3ae10e129201758541c7706bc6ce1f7364ea1",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G6",
+      "source_sha256": "adcf479bb9e41ee6d87d2fcd94325c8399f142b1ae8221e21e0870a991105d66",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G7",
+      "source_sha256": "c3f8d4376cffb9bbc196905eb82e703ac5943ae629a89bade72089f2ed534730",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G8",
+      "source_sha256": "1ce5abaceb77a9f5a130d9358c1bdf0325adcf974029542aece870453d56553c",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G9",
+      "source_sha256": "0b1f75f2710424e0577cb6fa9930ec417c8263654bfa229aeccd5324138ecc08",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G10",
+      "source_sha256": "9e979848f5cd994feef71bd375feaef05607be23b7bbb69ca74c4575b98f4bd2",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G11",
+      "source_sha256": "5da29496b72c0074189073c4dbce02b681f9519e6ff5540c895a985a949e88b8",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "cpp-handbook-v1",
+      "source": "G12",
+      "source_sha256": "6d077a806ebe606f9ebac7474e960f0f2fef2c9100a16d266dbcb3cb89775dce",
+      "revision": "8f479deaf660533b2ad82e1f721eb41a363112b6",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "esd",
+      "source": "ESD-SUITE-000",
+      "source_sha256": "6f86cdf53579f90f03f3cffad50d11caa76ac698ca6e379d5d6871b8b8629f5f",
+      "revision": "WORKTREE",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "esd",
+      "source": "ESD-METHOD-001",
+      "source_sha256": "2351864741fe50b0a6a16999f48ea7d798d3b9ad603d5612b0ab8ef5ca08b3e2",
+      "revision": "WORKTREE",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "esd",
+      "source": "ESD-REFERENCE-001",
+      "source_sha256": "9b47739f578d867c7e3bc899de79ac4fe65684e67e4a081aa80a6ecfb1f1d2f3",
+      "revision": "WORKTREE",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "esd",
+      "source": "ESD-GOV-001",
+      "source_sha256": "75217cef57cccc01258967c3ed9075f9f4f33257f67aa2a1409019d8f9a11a09",
+      "revision": "WORKTREE",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "esd",
+      "source": "ESD-ASSURANCE-001",
+      "source_sha256": "0b2273747bff2150c23da1509d137d68889e75a3ec917f972010afd927026f4d",
+      "revision": "WORKTREE",
+      "status": "SOURCE_FIDELITY_PASS"
+    },
+    {
+      "profile": "esd",
+      "source": "ESD-OPS-001",
+      "source_sha256": "710b0c1d268ffddce2a960b5900b1bcb397d4d32dc36370169d38c70efdfcc1a",
+      "revision": "WORKTREE",
+      "status": "SOURCE_FIDELITY_PASS"
+    }
+  ],
+  "byte_exact_transfers": 34,
+  "boundary": "Local consumer checks; not PDF, C++ or whole-book technical qualification"
+}

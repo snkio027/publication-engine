@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "python": "3.14.8 (main, Oct 14 2026, 00:55:47) [Clang 23.1.3 ]",
+  "optimization": 0,
+  "results": [
+    {
+      "group": "logic",
+      "file": "test-publication-isolation.py",
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tests/test-publication-isolation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 7.616,
+      "tests": 15,
+      "skips": 0,
+      "status": "PASS"
+    },
+    {
+      "group": "logic",
+      "file": "test-candidate.py",
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tests/test-candidate.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.212,
+      "tests": 11,
+      "skips": 0,
+      "status": "PASS"
+    },
+    {
+      "group": "logic",
+      "file": "test-evidence.py",
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tests/test-evidence.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.892,
+      "tests": 17,
+      "skips": 0,
+      "status": "PASS"
+    },
+    {
+      "group": "logic",
+      "file": "test-source-runtime.py",
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tests/test-source-runtime.py"
+      ],
+      "exit_code": 0,
+      "seconds": 6.844,
+      "tests": 7,
+      "skips": 0,
+      "status": "PASS"
+    },
+    {
+      "group": "adapters",
+      "file": "test-reading.py",
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tests/test-reading.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.412,
+      "tests": 11,
+      "skips": 0,
+      "status": "PASS"
+    },
+    {
+      "group": "native",
+      "file": "test-preview.py",
+      "argv": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/tests/test-preview.py"
+      ],
+      "exit_code": 0,
+      "seconds": 187.979,
+      "tests": 14,
+      "skips": 0,
+      "status": "PASS"
+    }
+  ],
+  "not_run": [],
+  "human_reading": "NOT_RUN_BY_TEST_RUNNER",
+  "ci": false
+}

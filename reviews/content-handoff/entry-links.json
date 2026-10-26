@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/README.md",
+      "local_links": [
+        "design/README.md",
+        "atlas/Atlas Architecture Design.md",
+        "atlas/Atlas GitOps Control Plane Design.md",
+        "atlas/AI-Native Platform Control Plane Architecture Standard.md",
+        "c++/README.md",
+        "c++/failure-model/README.md",
+        "zig/Zig Project Architecture Standard.md",
+        "design/dist/",
+        "atlas/pdf_build/",
+        "c++/pdf_build/",
+        "zig/pdf_build/",
+        "publication/README.md"
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/design/README.md",
+      "local_links": [
+        "00-优秀系统设计与工程保证标准-文档体系与规范关系-v1.0.0.md",
+        "00-优秀系统设计与工程保证标准-文档体系与规范关系-v1.0.0.md",
+        "01-优秀系统设计与工程保证方法论-v1.1.0.md",
+        "02-优秀系统设计-从约束不变量到证据-v1.1.0.md",
+        "03-系统设计与工程保证治理及符合性规范-v1.0.0.md",
+        "04-工程保证论证证据与裁决规范-v1.0.0.md",
+        "05-生产就绪与运行韧性标准-v1.0.0.md",
+        "reviews/a67fb25-review-status.md",
+        "00-优秀系统设计与工程保证标准-文档体系与规范关系-v1.0.0.md",
+        "project/plan.md",
+        "project/publication-design.md",
+        "project/publication-b1a.md",
+        "project/publication-preview.md",
+        "project/asset-register.md",
+        "reviews/a67fb25-review-status.md",
+        "project/asset-register.md",
+        "examples/pilots/README.md",
+        "dist/01-优秀系统设计与工程保证方法论-v1.1.0.pdf",
+        "dist/02-优秀系统设计-从约束不变量到证据-v1.1.0.pdf",
+        "dist/build-manifest.json",
+        "dist/sha256sums.txt",
+        "project/",
+        "reviews/",
+        "examples/",
+        "dist/",
+        "to-pdf.md",
+        "../publication/README.md"
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/design/project/asset-register.md",
+      "local_links": [
+        "../00-优秀系统设计与工程保证标准-文档体系与规范关系-v1.0.0.md",
+        "../01-优秀系统设计与工程保证方法论-v1.1.0.md",
+        "../02-优秀系统设计-从约束不变量到证据-v1.1.0.md",
+        "../03-系统设计与工程保证治理及符合性规范-v1.0.0.md",
+        "../04-工程保证论证证据与裁决规范-v1.0.0.md",
+        "../05-生产就绪与运行韧性标准-v1.0.0.md",
+        "../reviews/a67fb25-review-status.md",
+        "sources/KB-PLAN-001-v0.1.0-original.md",
+        "plan.md",
+        "../reviews/a67fb25-review-status.md",
+        "../examples/pilots/atlas-bootstrap-status-review.md",
+        "../examples/pilots/evidence/atlas-status-aca4ff1.json",
+        "plan.md",
+        "../../c++/g00-native-toolchain.md",
+        "../../c++/g01-object-model.md",
+        "../../zig/Zig Project Architecture Standard.md",
+        "../../README.md",
+        "../to-pdf.md",
+        "../dist/",
+        "../../publication/README.md",
+        "sources/KB-PLAN-001-v0.1.0-original.md",
+        "plan.md"
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/README.md",
+      "local_links": [
+        "releases/",
+        "reviews/",
+        "lessons-learned.md",
+        "layout-architecture-next.md",
+        "releases/cpp-handbook/v1.0.0/README.md",
+        "releases/cpp-failure-model/v1.0.0/README.md",
+        "handoff-2026-10.md"
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/nekoreb/Workspace/03_Projects/kb/publication/handoff-2026-10.md",
+      "local_links": [],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/README.md",
+      "local_links": [
+        "PROVENANCE.md",
+        "products/knowledge-base/README.md",
+        "reviews/content-handoff/README.md",
+        "reviews/safety-boundaries/README.md",
+        "reviews/standalone/README.md"
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/products/knowledge-base/README.md",
+      "local_links": [
+        "migration.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "path": "/Users/nekoreb/Workspace/03_Projects/publication-engine/reviews/content-handoff/README.md",
+      "local_links": [
+        "../../products/knowledge-base/README.md",
+        "../../products/knowledge-base/migration.json",
+        "engine-checks/results.json",
+        "checks/commands.json",
+        "checks/product-configure.stderr",
+        "product-check.json",
+        "prepare.json",
+        "builds.json",
+        "navigation.json",
+        "visual-inspection.json",
+        "checks/source-docs.stdout",
+        "protection.json",
+        "remote.json",
+        "project.json",
+        "tested-inputs.json"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "local_links": 89,
+  "boundary": "Active entry and handoff documents only; external URLs and immutable historical relative links not checked."
+}
