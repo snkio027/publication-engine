@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "knowledge-base",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "repository": "https://github.com/snkio027/publication-engine",
   "subdirectory": "products/knowledge-base",
   "engine": {
@@ -15,10 +15,11 @@
     "cpp-handbook-full": "publication/profiles/cpp-handbook-full/profile.json",
     "cpp-handbook-rc1": "publication/profiles/cpp-handbook-rc1/profile.json",
     "cpp-handbook-v1": "publication/profiles/cpp-handbook-v1/profile.json",
-    "esd": "publication/profiles/esd/profile.json"
+    "esd": "publication/profiles/esd/profile.json",
+    "robotics-handbook": "publication/profiles/robotics-handbook/profile.json"
   },
   "qualification": {
-    "corpus": "publication/tools/reading-corpus.json",
+    "corpus": "publication/tools/reading-corpus-v1.2.json",
     "trials": [
       {
         "profile": "cpp-handbook",
@@ -30,6 +31,9 @@
       },
       {
         "profile": "cpp-failure-model"
+      },
+      {
+        "profile": "robotics-handbook"
       }
     ]
   },
@@ -73,31 +77,6 @@
       "path": "publication/profiles/cpp-failure-model/theme.sty",
       "bytes": 1317,
       "sha256": "a48d8dc3af715e5d1fb17f59a11616f68492a489600e8f1c48839959d3c722ae"
-    },
-    {
-      "path": "publication/profiles/cpp-handbook/adapter.py",
-      "bytes": 3567,
-      "sha256": "8ac57d2cbbe7b82903870b4c3e483f972144b03bce22f6bc6d7f09358f298472"
-    },
-    {
-      "path": "publication/profiles/cpp-handbook/profile.json",
-      "bytes": 1989,
-      "sha256": "0619d1e5920e72ae317ecd183453e317b3ff5cda16d81c3510852cf0a1486aeb"
-    },
-    {
-      "path": "publication/profiles/cpp-handbook/table-layouts.json",
-      "bytes": 33,
-      "sha256": "806a349a0d74923dd7a103f82cd4422239896d88e56397a293b8c276ad4dd748"
-    },
-    {
-      "path": "publication/profiles/cpp-handbook/template.tex",
-      "bytes": 2249,
-      "sha256": "9e5dedc1fd6818adde796751fbb7c66fe074e3458121886d64eb6530a8ff6a20"
-    },
-    {
-      "path": "publication/profiles/cpp-handbook/theme.sty",
-      "bytes": 270,
-      "sha256": "97f9bdbec3048a445b6ac9d2729a14109237bb6cf36fdbbe8864b47a1e6d20d0"
     },
     {
       "path": "publication/profiles/cpp-handbook-full/adapter.py",
@@ -175,6 +154,31 @@
       "sha256": "9a659d7eafc0a740bdfc1d47538b25c53a627dd8dcc66f45f5f61731a23617d6"
     },
     {
+      "path": "publication/profiles/cpp-handbook/adapter.py",
+      "bytes": 3567,
+      "sha256": "8ac57d2cbbe7b82903870b4c3e483f972144b03bce22f6bc6d7f09358f298472"
+    },
+    {
+      "path": "publication/profiles/cpp-handbook/profile.json",
+      "bytes": 1989,
+      "sha256": "0619d1e5920e72ae317ecd183453e317b3ff5cda16d81c3510852cf0a1486aeb"
+    },
+    {
+      "path": "publication/profiles/cpp-handbook/table-layouts.json",
+      "bytes": 33,
+      "sha256": "806a349a0d74923dd7a103f82cd4422239896d88e56397a293b8c276ad4dd748"
+    },
+    {
+      "path": "publication/profiles/cpp-handbook/template.tex",
+      "bytes": 2249,
+      "sha256": "9e5dedc1fd6818adde796751fbb7c66fe074e3458121886d64eb6530a8ff6a20"
+    },
+    {
+      "path": "publication/profiles/cpp-handbook/theme.sty",
+      "bytes": 270,
+      "sha256": "97f9bdbec3048a445b6ac9d2729a14109237bb6cf36fdbbe8864b47a1e6d20d0"
+    },
+    {
       "path": "publication/profiles/esd/adapter.py",
       "bytes": 512,
       "sha256": "097b51eb7dd70448831838c35c8ebc17526ba357442081424aab23fa66205c09"
@@ -198,6 +202,36 @@
       "path": "publication/profiles/esd/theme.sty",
       "bytes": 116,
       "sha256": "648ccceeb02e800c832b7667b6fceafb691037ea4b80675e9839b98e201cd1b0"
+    },
+    {
+      "path": "publication/profiles/robotics-handbook/adapter.py",
+      "bytes": 2406,
+      "sha256": "06be34bc1a56f1818369a955bdf93ad2889f6bf8c572b2276f679d1826d50560"
+    },
+    {
+      "path": "publication/profiles/robotics-handbook/profile.json",
+      "bytes": 1004,
+      "sha256": "5fff91d895bde2c85cdf08856e06b630d8e781ed7cc51ba9ea20788058b4abe7"
+    },
+    {
+      "path": "publication/profiles/robotics-handbook/table-layouts.json",
+      "bytes": 33,
+      "sha256": "806a349a0d74923dd7a103f82cd4422239896d88e56397a293b8c276ad4dd748"
+    },
+    {
+      "path": "publication/profiles/robotics-handbook/template.tex",
+      "bytes": 2551,
+      "sha256": "7d618bf1bcae2fda88e428d852b2d21a244253cd09face4b8b2a9290a90a06cc"
+    },
+    {
+      "path": "publication/profiles/robotics-handbook/theme.sty",
+      "bytes": 2528,
+      "sha256": "8b13d073d14bd4adde5eb9e066cc1f9f26ab11db9614e4acceb95214e4718604"
+    },
+    {
+      "path": "publication/tools/reading-corpus-v1.2.json",
+      "bytes": 6251,
+      "sha256": "04d5a404c57b3a7fee616dfff3daf8a311f538e682907f4f2f86cfb735373346"
     },
     {
       "path": "publication/tools/reading-corpus.json",

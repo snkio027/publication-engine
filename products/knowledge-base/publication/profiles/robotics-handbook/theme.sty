@@ -1,0 +1,42 @@
+\ProvidesPackage{theme}[2026/10/26 Robotics learning reading identity]
+\definecolor{PreviewNavy}{HTML}{243447}
+\definecolor{PreviewTeal}{HTML}{265D78}
+\fancyfoot[L]{\sffamily\fontsize{7.5}{9}\selectfont\color{PreviewMuted}PREVIEW · 学习阅读版 · 实机验证未完成}
+% Keep each bibliography title with its short description. These are the
+% mapped S01-S30 source targets, not physical page numbers. No source edits.
+\newcommand{\RoboticsReferenceKeep}[1]{\expandafter\gdef\csname RoboticsReference-#1\endcsname{}}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-ac7438e86cb85ebd}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-bbe97d17449c6e00}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-217c48f2b7fdd352}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-3491f905b529783d}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-39a6c3d9fd987246}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-3193b0ffb09ae1f3}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-4fc42779a8a8ca27}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-33829b0e034a02f2}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-7e0b7c84ed21fedc}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-3d16e90141e88e72}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-4a1bcaec718f10ed}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-d30b6fedc77faaf5}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-02cfcc7e2872c636}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-ec546f04a3d6c011}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-dca468ba69cda665}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-8662203314894f22}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-b59848410d5d135a}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-d625318b6fb0a410}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-d87f96c3835db619}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-7e830ff5e5fac9a7}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-56757a56803c5213}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-b42bb4596754322b}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-a1489528636ae9c6}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-aa82f28022e63b9f}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-9882cc2c672fd4a9}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-a0e6cd01fb2fdc37}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-8e91c58443a732f8}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-dda38629e9a35110}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-10f579513ceb7cd4}
+\RoboticsReferenceKeep{ROBOTICS-HANDBOOK-8de67c4ac283ca08}
+\let\RoboticsOriginalTarget\hypertarget
+\renewcommand{\hypertarget}[2]{%
+  \ifcsname RoboticsReference-#1\endcsname
+    \setlength{\parskip}{4pt plus 1pt minus 1pt}\par\Needspace{2.4\baselineskip}\fi
+  \RoboticsOriginalTarget{#1}{#2}}

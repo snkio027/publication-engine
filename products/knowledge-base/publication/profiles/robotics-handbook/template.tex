@@ -1,0 +1,45 @@
+\documentclass[UTF8,fontset=none,scheme=plain,11pt,a4paper,oneside,openany]{kbbook}
+\usepackage{kb-base}
+\usepackage{theme}
+\PreviewDensity{$density$}
+\PreviewSetIdentity{$document_id$}{$version$}{$status$}
+\hypersetup{pdftitle={$title$},pdfauthor={$owner$},pdfsubject={$subject$},pdfkeywords={$keywords$}}
+\begin{document}
+\pagestyle{empty}
+\pagecolor{PreviewNavy}\color{white}
+\noindent{\sffamily\small ROBOTICS LEARNING\hfill PREVIEW / READING EDITION}
+\vspace*{30mm}
+\begin{flushleft}{\sffamily\bfseries\fontsize{29}{38}\selectfont $title$\par}\end{flushleft}
+\vspace{8mm}
+{\sffamily\large $subtitle$\par}
+\vfill
+{\sffamily\small $document_id$\par\medskip v$version$\par\medskip $status$\par}
+\vspace{10mm}
+{\small 可测量的单轴运动系统 → 带反馈的桌面交互机器人 → 智能机器宠物原型。\par\medskip 权威正文为 Markdown。本件为学习阅读版，不是实机验收报告或硬件安全认证。\par}
+\clearpage\nopagecolor\color{PreviewInk}\pagestyle{fancy}
+\PreviewHeading{chapter}{part}{generated-preface}{阅读与版本说明}
+\noindent\textbf{PREVIEW · 学习阅读版 · v$version$}
+
+本件从知识库固定提交取源，完整保留原稿的 23 个主题、R0—R7 八个学习阶段及 S01—S30 参考条目。正文身份仍为建议学习基线；生成 PDF 不代表已完成技术复审、硬件实验或正式发布。
+
+\medskip
+首次阅读建议从定位、硬件与环境章节开始。任何真实上电或运动前，先阅读第 18 节，并核对具体板卡、接线、仪表与软件版本。文中的资料核验日期是原稿声明，不是本次出版对动态资料的独立重验。
+
+\medskip
+\noindent\textbf{正文版本}\quad $version$\par
+\noindent\textbf{正文状态}\quad $status$\par
+\noindent\textbf{内容提交}\quad\texttt{$source_commit$}\par
+\noindent\textbf{准备标识}\quad\texttt{$build_short$}\par
+\noindent\textbf{阅读版式}\quad Visual Profile v1.0 · $density$\par
+
+\medskip
+目录、书签、正文阶段链接和 S 编号可以点击。生成目录只显示主题层级；原稿的阅读导航及全部小节保留在正文。PDF 物理页数由本次编排产生，不沿用 Word 版页数。公式、算法结构、目录树与实验模板保持各自身份，不作为已经运行的代码或已完成记录。
+
+\medskip
+本件不包含采购、部署或发布授权。完整来源、检查范围、PDF 摘要及未验证事项见随附构建记录。
+\clearpage
+\setcounter{tocdepth}{$toc_depth$}
+\tableofcontents
+\clearpage
+$body$
+\end{document}

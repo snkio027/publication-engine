@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "id": "robotics-handbook",
+  "repository": "https://github.com/snkio027/kb",
+  "source_format": "markdown-smart",
+  "artifact_channel": "PREVIEW",
+  "navigation": {"preface_title": "阅读与版本说明", "preface_id": "generated-preface"},
+  "reading": {
+    "density": "balanced",
+    "heading_roles": {"2": "section", "3": "subsection"},
+    "min_head_lines": 4,
+    "min_tail_lines": 6,
+    "short_table_lines": 12
+  },
+  "sources": [{
+    "id": "ROBOTICS-HANDBOOK",
+    "path": "robotics/robotics-learning-handbook-v1.0.md",
+    "revision": "2b90ad93f29800f08d1bc8f6b9083c8904dae7da",
+    "version": "1.0.0"
+  }],
+  "views": [{
+    "id": "ROBOTICS-HANDBOOK",
+    "documents": ["ROBOTICS-HANDBOOK"],
+    "filename": "Robotics-Learning-Handbook-v1.0.0-reading.pdf"
+  }],
+  "toc_depth": 1,
+  "combined_toc_depth": 1,
+  "required_headings": ["01　定位", "18　实验安全", "23　资料使用", "一手参考资料"],
+  "new_page_heading_patterns": [],
+  "index": null
+}

@@ -1,0 +1,28 @@
+{
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "python": "3.14.8 (main, Oct 14 2026, 00:55:47) [Clang 23.1.3 ]",
+  "results": [
+    {
+      "command": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "products/knowledge-base/test-robotics.py",
+        "--content",
+        "/Users/nekoreb/Workspace/03_Projects/knowledge-base"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_all_code_and_relations_preserved (__main__.RoboticsAdapterTests.test_all_code_and_relations_preserved) ... ok\ntest_all_explicit_targets_retained (__main__.RoboticsAdapterTests.test_all_explicit_targets_retained) ... ok\ntest_anchor_moved_to_wrong_paragraph_rejected (__main__.RoboticsAdapterTests.test_anchor_moved_to_wrong_paragraph_rejected) ... ok\ntest_code_mutation_rejected (__main__.RoboticsAdapterTests.test_code_mutation_rejected) ... ok\ntest_false_acceptance_rejected (__main__.RoboticsAdapterTests.test_false_acceptance_rejected) ... ok\ntest_fixed_source_bytes (__main__.RoboticsAdapterTests.test_fixed_source_bytes) ... ok\ntest_identity_not_promoted (__main__.RoboticsAdapterTests.test_identity_not_promoted) ... ok\ntest_reference_keep_targets_exact (__main__.RoboticsAdapterTests.test_reference_keep_targets_exact) ... ok\ntest_unknown_markup_rejected (__main__.RoboticsAdapterTests.test_unknown_markup_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.606s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/Users/nekoreb/Workspace/03_Projects/publication-engine/.venv/bin/python",
+        "-B",
+        "products/knowledge-base/test-configure.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_changed_pin_is_rejected_before_output (__main__.ConfigurationTests.test_changed_pin_is_rejected_before_output) ... ok\ntest_changed_product_is_rejected_before_output (__main__.ConfigurationTests.test_changed_product_is_rejected_before_output) ... ok\ntest_content_ancestor_rejected (__main__.ConfigurationTests.test_content_ancestor_rejected) ... ok\ntest_content_descendant_rejected (__main__.ConfigurationTests.test_content_descendant_rejected) ... ok\ntest_engine_cannot_be_content (__main__.ConfigurationTests.test_engine_cannot_be_content) ... ok\ntest_existing_nonempty_workspace_is_unchanged (__main__.ConfigurationTests.test_existing_nonempty_workspace_is_unchanged) ... ok\ntest_external_descriptor_and_engine_pin (__main__.ConfigurationTests.test_external_descriptor_and_engine_pin) ... ok\ntest_linked_ancestor_never_touches_archive (__main__.ConfigurationTests.test_linked_ancestor_never_touches_archive) ... ok\ntest_migration_record_is_not_runtime_configuration (__main__.ConfigurationTests.test_migration_record_is_not_runtime_configuration) ... ok\ntest_product_and_engine_roots_rejected (__main__.ConfigurationTests.test_product_and_engine_roots_rejected) ... ok\ntest_product_drift_after_configuration_is_refused (__main__.ConfigurationTests.test_product_drift_after_configuration_is_refused) ... ok\ntest_product_output_entrypoints_reject_content_before_write (__main__.ConfigurationTests.test_product_output_entrypoints_reject_content_before_write) ... ok\ntest_repeat_configuration_never_overwrites (__main__.ConfigurationTests.test_repeat_configuration_never_overwrites) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 4.335s\n\nOK\n"
+    }
+  ]
+}

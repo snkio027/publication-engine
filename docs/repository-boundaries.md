@@ -42,7 +42,7 @@
 | 内容 revision | profile 中的完整 Git commit 或 WORKTREE；内容 SHA 单独绑定 |
 | 产品交付 commit | 获取产品工具及审核记录的仓库提交；不是引擎实现 pin |
 | 产品 ID / version / subdirectory | 当前 `product.json` 的显式身份，与产品输入集合摘要共同使用 |
-| 产品输入 | 清单中 34 份 profile/adapter/template/theme/依赖/corpus 的字节；每次准备重新核对 |
+| 产品输入 | 当前清单列出的 profile/adapter/template/theme/依赖/corpus 字节；每次准备重新核对 |
 | 引擎 pin | 清单选定的完整提交；只核对 engine/latex/tools 与三份 Python 环境文件 |
 | 迁移事实 | `migration.json` 固定原迁入来源 `a022de3…`，不再参与日常运行配置 |
 | Visual Profile | v1.0，不能由实现提交变化自动升级 |
@@ -50,7 +50,7 @@
 
 描述文件保存产品版本、清单摘要、完整产品输入集合摘要和引擎 pin；准备快照另保存选定输入及原始清单。修改清单或产品字节后，旧 descriptor 拒绝继续，需重新配置。profile 目录出现清单未声明的额外输入也拒绝。未选择 profile 的文件不进入排版，但其锁定身份仍按整包核对。
 
-产品配置器和验收脚本由产品交付 Git commit 绑定，不属于 34 份排版输入清单；它们不是随清单摘要一起获得安全认证。通用 schema v1 消费者可不提供 product 字段，此时明确记为 `UNVERSIONED_CONSUMER_INPUTS`；KB 受支持入口必须使用版本化产品。仓库 URL 是声明，实际字节和 Git 对象是本地验证，不声称远端签名认证。
+产品配置器和验收脚本由产品交付 Git commit 绑定，不属于排版输入清单；它们不是随清单摘要一起获得安全认证。通用 schema v1 消费者可不提供 product 字段，此时明确记为 `UNVERSIONED_CONSUMER_INPUTS`；KB 受支持入口必须使用版本化产品。仓库 URL 是声明，实际字节和 Git 对象是本地验证，不声称远端签名认证。
 
 ## 4. 验证与证据
 
@@ -59,7 +59,7 @@
 | 内容实验 | knowledge-base 的内容验证脚本 | PDF 已验收 |
 | 通用回归 | tests/run.py；独立合成仓库 | KB 整本书已验收 |
 | 当前适配检查 | 产品 check.py；当前锁与显式内容根 | PDF/C++ 技术验证 |
-| 当前产品验收 | 产品 qualify.py；当前清单中的三个 trial | 人工阅读、阅读器兼容或发布 |
+| 当前产品验收 | 产品 qualify.py；当前清单声明的 trial | 人工阅读、阅读器兼容或发布 |
 | 历史比较 | check_navigation.py + 显式 baseline JSON | 旧本机尝试必定可用、视觉批准 |
 | 人工接受 | 指定制品摘要与页面/阅读范围 | 新字节、其他平台自动接受 |
 | 正式分发 | 单独批准的书籍发布流程 | 任意后续重建可覆盖资产 |

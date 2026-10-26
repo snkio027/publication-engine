@@ -1,0 +1,1682 @@
+{
+  "status": "PASS",
+  "pdf_sha256": "af995ba9a2ab09e4c8e126c20458cf1222bde4e6486793f07b826b371628e876",
+  "pages": 28,
+  "explicit_source_targets": 54,
+  "source_internal_occurrences": 88,
+  "actual_body_internal_annotations": 88,
+  "external_source_urls": 30,
+  "actual_body_uri_rectangles": 30,
+  "body_first_page": 4,
+  "targets": {
+    "sec01": {
+      "destination": "ROBOTICS-HANDBOOK-36e5a24813a52c63",
+      "page": 5
+    },
+    "sec02": {
+      "destination": "ROBOTICS-HANDBOOK-0fc8ffc2637728cb",
+      "page": 6
+    },
+    "sec03": {
+      "destination": "ROBOTICS-HANDBOOK-bcd3466cfb422043",
+      "page": 6
+    },
+    "sec04": {
+      "destination": "ROBOTICS-HANDBOOK-0e9b218295d61dc3",
+      "page": 7
+    },
+    "sec05": {
+      "destination": "ROBOTICS-HANDBOOK-693c671262b32314",
+      "page": 8
+    },
+    "sec06": {
+      "destination": "ROBOTICS-HANDBOOK-24181a75bb46811f",
+      "page": 9
+    },
+    "sec07": {
+      "destination": "ROBOTICS-HANDBOOK-bbb681ea5a018f4c",
+      "page": 10
+    },
+    "sec08": {
+      "destination": "ROBOTICS-HANDBOOK-f71a0df5adb323bf",
+      "page": 11
+    },
+    "sec09": {
+      "destination": "ROBOTICS-HANDBOOK-de8815bf227c5d0a",
+      "page": 12
+    },
+    "sec10": {
+      "destination": "ROBOTICS-HANDBOOK-c80da7ba7ccdf83d",
+      "page": 13
+    },
+    "sec11": {
+      "destination": "ROBOTICS-HANDBOOK-7bac5de953e7b80f",
+      "page": 14
+    },
+    "sec12": {
+      "destination": "ROBOTICS-HANDBOOK-f1cb1e433a589d1a",
+      "page": 15
+    },
+    "sec13": {
+      "destination": "ROBOTICS-HANDBOOK-374e43fab99fed3f",
+      "page": 16
+    },
+    "sec14": {
+      "destination": "ROBOTICS-HANDBOOK-fbe7db6ab00addf3",
+      "page": 17
+    },
+    "sec15": {
+      "destination": "ROBOTICS-HANDBOOK-7604aeaf0d8699cc",
+      "page": 18
+    },
+    "sec16": {
+      "destination": "ROBOTICS-HANDBOOK-c132520a8184a6c0",
+      "page": 19
+    },
+    "sec17": {
+      "destination": "ROBOTICS-HANDBOOK-2f1d1cffb055623b",
+      "page": 20
+    },
+    "sec18": {
+      "destination": "ROBOTICS-HANDBOOK-689a38f13ba6ca3f",
+      "page": 21
+    },
+    "sec19": {
+      "destination": "ROBOTICS-HANDBOOK-184c0566264d4590",
+      "page": 22
+    },
+    "sec20": {
+      "destination": "ROBOTICS-HANDBOOK-21574a4b30294894",
+      "page": 23
+    },
+    "sec21": {
+      "destination": "ROBOTICS-HANDBOOK-b13b16d0a6b9cd06",
+      "page": 24
+    },
+    "sec22": {
+      "destination": "ROBOTICS-HANDBOOK-ba9b7523d16aed75",
+      "page": 25
+    },
+    "sec23": {
+      "destination": "ROBOTICS-HANDBOOK-a573a89d627da0e7",
+      "page": 26
+    },
+    "references": {
+      "destination": "ROBOTICS-HANDBOOK-07a0b0962107485c",
+      "page": 27
+    },
+    "S01": {
+      "destination": "ROBOTICS-HANDBOOK-ac7438e86cb85ebd",
+      "page": 27
+    },
+    "S02": {
+      "destination": "ROBOTICS-HANDBOOK-bbe97d17449c6e00",
+      "page": 27
+    },
+    "S03": {
+      "destination": "ROBOTICS-HANDBOOK-217c48f2b7fdd352",
+      "page": 27
+    },
+    "S04": {
+      "destination": "ROBOTICS-HANDBOOK-3491f905b529783d",
+      "page": 27
+    },
+    "S05": {
+      "destination": "ROBOTICS-HANDBOOK-39a6c3d9fd987246",
+      "page": 27
+    },
+    "S06": {
+      "destination": "ROBOTICS-HANDBOOK-3193b0ffb09ae1f3",
+      "page": 27
+    },
+    "S07": {
+      "destination": "ROBOTICS-HANDBOOK-4fc42779a8a8ca27",
+      "page": 27
+    },
+    "S08": {
+      "destination": "ROBOTICS-HANDBOOK-33829b0e034a02f2",
+      "page": 27
+    },
+    "S09": {
+      "destination": "ROBOTICS-HANDBOOK-7e0b7c84ed21fedc",
+      "page": 27
+    },
+    "S10": {
+      "destination": "ROBOTICS-HANDBOOK-3d16e90141e88e72",
+      "page": 27
+    },
+    "S11": {
+      "destination": "ROBOTICS-HANDBOOK-4a1bcaec718f10ed",
+      "page": 27
+    },
+    "S12": {
+      "destination": "ROBOTICS-HANDBOOK-d30b6fedc77faaf5",
+      "page": 27
+    },
+    "S13": {
+      "destination": "ROBOTICS-HANDBOOK-02cfcc7e2872c636",
+      "page": 27
+    },
+    "S14": {
+      "destination": "ROBOTICS-HANDBOOK-ec546f04a3d6c011",
+      "page": 27
+    },
+    "S15": {
+      "destination": "ROBOTICS-HANDBOOK-dca468ba69cda665",
+      "page": 28
+    },
+    "S16": {
+      "destination": "ROBOTICS-HANDBOOK-8662203314894f22",
+      "page": 28
+    },
+    "S17": {
+      "destination": "ROBOTICS-HANDBOOK-b59848410d5d135a",
+      "page": 28
+    },
+    "S18": {
+      "destination": "ROBOTICS-HANDBOOK-d625318b6fb0a410",
+      "page": 28
+    },
+    "S19": {
+      "destination": "ROBOTICS-HANDBOOK-d87f96c3835db619",
+      "page": 28
+    },
+    "S20": {
+      "destination": "ROBOTICS-HANDBOOK-7e830ff5e5fac9a7",
+      "page": 28
+    },
+    "S21": {
+      "destination": "ROBOTICS-HANDBOOK-56757a56803c5213",
+      "page": 28
+    },
+    "S22": {
+      "destination": "ROBOTICS-HANDBOOK-b42bb4596754322b",
+      "page": 28
+    },
+    "S23": {
+      "destination": "ROBOTICS-HANDBOOK-a1489528636ae9c6",
+      "page": 28
+    },
+    "S24": {
+      "destination": "ROBOTICS-HANDBOOK-aa82f28022e63b9f",
+      "page": 28
+    },
+    "S25": {
+      "destination": "ROBOTICS-HANDBOOK-9882cc2c672fd4a9",
+      "page": 28
+    },
+    "S26": {
+      "destination": "ROBOTICS-HANDBOOK-a0e6cd01fb2fdc37",
+      "page": 28
+    },
+    "S27": {
+      "destination": "ROBOTICS-HANDBOOK-8e91c58443a732f8",
+      "page": 28
+    },
+    "S28": {
+      "destination": "ROBOTICS-HANDBOOK-dda38629e9a35110",
+      "page": 28
+    },
+    "S29": {
+      "destination": "ROBOTICS-HANDBOOK-10f579513ceb7cd4",
+      "page": 28
+    },
+    "S30": {
+      "destination": "ROBOTICS-HANDBOOK-8de67c4ac283ca08",
+      "page": 28
+    }
+  },
+  "reference_entry_grouping": [
+    {
+      "id": "S01",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S02",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S03",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S04",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S05",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S06",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S07",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S08",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S09",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S10",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S11",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S12",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S13",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S14",
+      "page": 27,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S15",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S16",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S17",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S18",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S19",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S20",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S21",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S22",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S23",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S24",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S25",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S26",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S27",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S28",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S29",
+      "page": 28,
+      "title_and_description_same_page": true
+    },
+    {
+      "id": "S30",
+      "page": 28,
+      "title_and_description_same_page": true
+    }
+  ],
+  "body_annotations": [
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-36e5a24813a52c63",
+      "uri": null,
+      "rect": [
+        83.184,
+        505.296,
+        218.813,
+        518.197
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-0fc8ffc2637728cb",
+      "uri": null,
+      "rect": [
+        83.184,
+        486.773,
+        273.358,
+        499.675
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-bcd3466cfb422043",
+      "uri": null,
+      "rect": [
+        83.184,
+        468.251,
+        295.177,
+        481.152
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-0e9b218295d61dc3",
+      "uri": null,
+      "rect": [
+        83.184,
+        449.728,
+        262.449,
+        462.63
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-693c671262b32314",
+      "uri": null,
+      "rect": [
+        83.184,
+        431.206,
+        324.544,
+        444.107
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-24181a75bb46811f",
+      "uri": null,
+      "rect": [
+        83.184,
+        412.683,
+        273.358,
+        425.585
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-bbb681ea5a018f4c",
+      "uri": null,
+      "rect": [
+        83.184,
+        394.16,
+        262.449,
+        407.062
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-f71a0df5adb323bf",
+      "uri": null,
+      "rect": [
+        83.184,
+        375.638,
+        245.006,
+        388.54
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-de8815bf227c5d0a",
+      "uri": null,
+      "rect": [
+        83.184,
+        357.115,
+        277.733,
+        370.017
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-c80da7ba7ccdf83d",
+      "uri": null,
+      "rect": [
+        83.184,
+        338.593,
+        223.188,
+        351.494
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-7bac5de953e7b80f",
+      "uri": null,
+      "rect": [
+        83.184,
+        320.07,
+        255.915,
+        332.972
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-f1cb1e433a589d1a",
+      "uri": null,
+      "rect": [
+        83.184,
+        301.548,
+        277.733,
+        314.449
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-374e43fab99fed3f",
+      "uri": null,
+      "rect": [
+        83.184,
+        283.025,
+        273.184,
+        295.927
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-fbe7db6ab00addf3",
+      "uri": null,
+      "rect": [
+        83.184,
+        264.503,
+        223.188,
+        277.404
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-7604aeaf0d8699cc",
+      "uri": null,
+      "rect": [
+        83.184,
+        245.98,
+        266.824,
+        258.882
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-c132520a8184a6c0",
+      "uri": null,
+      "rect": [
+        83.184,
+        227.457,
+        295.177,
+        240.359
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-2f1d1cffb055623b",
+      "uri": null,
+      "rect": [
+        83.184,
+        208.935,
+        284.268,
+        221.837
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-689a38f13ba6ca3f",
+      "uri": null,
+      "rect": [
+        83.184,
+        190.412,
+        229.722,
+        203.314
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-184c0566264d4590",
+      "uri": null,
+      "rect": [
+        83.184,
+        171.89,
+        240.631,
+        184.791
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-21574a4b30294894",
+      "uri": null,
+      "rect": [
+        83.184,
+        153.367,
+        229.722,
+        166.269
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-b13b16d0a6b9cd06",
+      "uri": null,
+      "rect": [
+        83.184,
+        134.845,
+        240.631,
+        147.746
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-ba9b7523d16aed75",
+      "uri": null,
+      "rect": [
+        83.184,
+        116.322,
+        284.268,
+        129.224
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-a573a89d627da0e7",
+      "uri": null,
+      "rect": [
+        83.184,
+        97.8,
+        240.631,
+        110.701
+      ]
+    },
+    {
+      "page": 4,
+      "target": "ROBOTICS-HANDBOOK-07a0b0962107485c",
+      "uri": null,
+      "rect": [
+        83.184,
+        79.277,
+        150.631,
+        92.179
+      ]
+    },
+    {
+      "page": 6,
+      "target": "ROBOTICS-HANDBOOK-7e0b7c84ed21fedc",
+      "uri": null,
+      "rect": [
+        61.366,
+        208.501,
+        79.853,
+        218.13
+      ]
+    },
+    {
+      "page": 6,
+      "target": "ROBOTICS-HANDBOOK-3d16e90141e88e72",
+      "uri": null,
+      "rect": [
+        77.86,
+        208.501,
+        96.348,
+        218.13
+      ]
+    },
+    {
+      "page": 6,
+      "target": "ROBOTICS-HANDBOOK-4a1bcaec718f10ed",
+      "uri": null,
+      "rect": [
+        94.355,
+        208.501,
+        112.842,
+        218.13
+      ]
+    },
+    {
+      "page": 8,
+      "target": "ROBOTICS-HANDBOOK-ac7438e86cb85ebd",
+      "uri": null,
+      "rect": [
+        204.057,
+        104.343,
+        222.544,
+        117.245
+      ]
+    },
+    {
+      "page": 8,
+      "target": "ROBOTICS-HANDBOOK-bbe97d17449c6e00",
+      "uri": null,
+      "rect": [
+        220.551,
+        104.343,
+        239.038,
+        117.245
+      ]
+    },
+    {
+      "page": 9,
+      "target": "ROBOTICS-HANDBOOK-217c48f2b7fdd352",
+      "uri": null,
+      "rect": [
+        437.446,
+        720.774,
+        455.933,
+        733.676
+      ]
+    },
+    {
+      "page": 9,
+      "target": "ROBOTICS-HANDBOOK-3491f905b529783d",
+      "uri": null,
+      "rect": [
+        453.94,
+        720.774,
+        472.428,
+        733.676
+      ]
+    },
+    {
+      "page": 10,
+      "target": "ROBOTICS-HANDBOOK-3193b0ffb09ae1f3",
+      "uri": null,
+      "rect": [
+        432.09,
+        733.203,
+        450.577,
+        746.105
+      ]
+    },
+    {
+      "page": 10,
+      "target": "ROBOTICS-HANDBOOK-4fc42779a8a8ca27",
+      "uri": null,
+      "rect": [
+        448.584,
+        733.203,
+        467.071,
+        746.105
+      ]
+    },
+    {
+      "page": 10,
+      "target": "ROBOTICS-HANDBOOK-3193b0ffb09ae1f3",
+      "uri": null,
+      "rect": [
+        323.184,
+        695.162,
+        341.671,
+        708.064
+      ]
+    },
+    {
+      "page": 10,
+      "target": "ROBOTICS-HANDBOOK-4fc42779a8a8ca27",
+      "uri": null,
+      "rect": [
+        339.679,
+        695.162,
+        358.166,
+        708.064
+      ]
+    },
+    {
+      "page": 10,
+      "target": "ROBOTICS-HANDBOOK-3193b0ffb09ae1f3",
+      "uri": null,
+      "rect": [
+        250.017,
+        433.075,
+        268.504,
+        445.976
+      ]
+    },
+    {
+      "page": 10,
+      "target": "ROBOTICS-HANDBOOK-b59848410d5d135a",
+      "uri": null,
+      "rect": [
+        94.093,
+        208.128,
+        112.58,
+        221.03
+      ]
+    },
+    {
+      "page": 10,
+      "target": "ROBOTICS-HANDBOOK-d625318b6fb0a410",
+      "uri": null,
+      "rect": [
+        110.588,
+        208.128,
+        129.075,
+        221.03
+      ]
+    },
+    {
+      "page": 11,
+      "target": "ROBOTICS-HANDBOOK-d30b6fedc77faaf5",
+      "uri": null,
+      "rect": [
+        385.268,
+        566.551,
+        403.755,
+        580.871
+      ]
+    },
+    {
+      "page": 11,
+      "target": "ROBOTICS-HANDBOOK-02cfcc7e2872c636",
+      "uri": null,
+      "rect": [
+        401.762,
+        566.551,
+        420.249,
+        580.871
+      ]
+    },
+    {
+      "page": 11,
+      "target": "ROBOTICS-HANDBOOK-ec546f04a3d6c011",
+      "uri": null,
+      "rect": [
+        418.257,
+        566.551,
+        436.744,
+        580.871
+      ]
+    },
+    {
+      "page": 11,
+      "target": "ROBOTICS-HANDBOOK-39a6c3d9fd987246",
+      "uri": null,
+      "rect": [
+        61.366,
+        435.137,
+        79.853,
+        444.766
+      ]
+    },
+    {
+      "page": 11,
+      "target": "ROBOTICS-HANDBOOK-56757a56803c5213",
+      "uri": null,
+      "rect": [
+        508.726,
+        353.276,
+        527.213,
+        367.487
+      ]
+    },
+    {
+      "page": 11,
+      "target": "ROBOTICS-HANDBOOK-7e830ff5e5fac9a7",
+      "uri": null,
+      "rect": [
+        360.919,
+        315.235,
+        379.406,
+        329.445
+      ]
+    },
+    {
+      "page": 11,
+      "target": "ROBOTICS-HANDBOOK-33829b0e034a02f2",
+      "uri": null,
+      "rect": [
+        181.366,
+        124.434,
+        199.853,
+        137.335
+      ]
+    },
+    {
+      "page": 12,
+      "target": "ROBOTICS-HANDBOOK-3193b0ffb09ae1f3",
+      "uri": null,
+      "rect": [
+        305.511,
+        108.555,
+        323.998,
+        121.457
+      ]
+    },
+    {
+      "page": 12,
+      "target": "ROBOTICS-HANDBOOK-3d16e90141e88e72",
+      "uri": null,
+      "rect": [
+        322.006,
+        108.555,
+        340.493,
+        121.457
+      ]
+    },
+    {
+      "page": 13,
+      "target": "ROBOTICS-HANDBOOK-7e0b7c84ed21fedc",
+      "uri": null,
+      "rect": [
+        105.002,
+        253.69,
+        123.489,
+        266.592
+      ]
+    },
+    {
+      "page": 14,
+      "target": "ROBOTICS-HANDBOOK-3491f905b529783d",
+      "uri": null,
+      "rect": [
+        170.457,
+        214.966,
+        188.944,
+        227.868
+      ]
+    },
+    {
+      "page": 15,
+      "target": "ROBOTICS-HANDBOOK-3d16e90141e88e72",
+      "uri": null,
+      "rect": [
+        515.423,
+        390.068,
+        533.91,
+        403.406
+      ]
+    },
+    {
+      "page": 16,
+      "target": "ROBOTICS-HANDBOOK-8662203314894f22",
+      "uri": null,
+      "rect": [
+        268.639,
+        383.863,
+        287.126,
+        396.764
+      ]
+    },
+    {
+      "page": 16,
+      "target": "ROBOTICS-HANDBOOK-dca468ba69cda665",
+      "uri": null,
+      "rect": [
+        410.457,
+        266.415,
+        428.944,
+        279.317
+      ]
+    },
+    {
+      "page": 17,
+      "target": "ROBOTICS-HANDBOOK-b59848410d5d135a",
+      "uri": null,
+      "rect": [
+        399.548,
+        367.333,
+        418.035,
+        380.234
+      ]
+    },
+    {
+      "page": 17,
+      "target": "ROBOTICS-HANDBOOK-d625318b6fb0a410",
+      "uri": null,
+      "rect": [
+        416.042,
+        367.333,
+        434.529,
+        380.234
+      ]
+    },
+    {
+      "page": 18,
+      "target": "ROBOTICS-HANDBOOK-b42bb4596754322b",
+      "uri": null,
+      "rect": [
+        225.002,
+        430.209,
+        243.489,
+        443.111
+      ]
+    },
+    {
+      "page": 18,
+      "target": "ROBOTICS-HANDBOOK-a1489528636ae9c6",
+      "uri": null,
+      "rect": [
+        366.82,
+        392.168,
+        385.308,
+        405.069
+      ]
+    },
+    {
+      "page": 18,
+      "target": "ROBOTICS-HANDBOOK-aa82f28022e63b9f",
+      "uri": null,
+      "rect": [
+        235.911,
+        258.19,
+        254.398,
+        271.092
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-d87f96c3835db619",
+      "uri": null,
+      "rect": [
+        437.806,
+        720.587,
+        456.293,
+        733.488
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-b42bb4596754322b",
+      "uri": null,
+      "rect": [
+        321.656,
+        505.628,
+        337.959,
+        519.792
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-a1489528636ae9c6",
+      "uri": null,
+      "rect": [
+        335.966,
+        505.628,
+        352.269,
+        519.792
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-9882cc2c672fd4a9",
+      "uri": null,
+      "rect": [
+        483.622,
+        486.667,
+        499.925,
+        507.62
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-a0e6cd01fb2fdc37",
+      "uri": null,
+      "rect": [
+        497.932,
+        486.667,
+        514.235,
+        507.62
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-8e91c58443a732f8",
+      "uri": null,
+      "rect": [
+        503.848,
+        451.905,
+        520.15,
+        472.859
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-8e91c58443a732f8",
+      "uri": null,
+      "rect": [
+        447.06,
+        417.144,
+        463.363,
+        438.097
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-dda38629e9a35110",
+      "uri": null,
+      "rect": [
+        513.312,
+        347.621,
+        529.615,
+        368.574
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-8e91c58443a732f8",
+      "uri": null,
+      "rect": [
+        290.457,
+        231.821,
+        308.944,
+        244.723
+      ]
+    },
+    {
+      "page": 19,
+      "target": "ROBOTICS-HANDBOOK-dda38629e9a35110",
+      "uri": null,
+      "rect": [
+        510.319,
+        193.78,
+        528.806,
+        206.681
+      ]
+    },
+    {
+      "page": 20,
+      "target": "ROBOTICS-HANDBOOK-3d16e90141e88e72",
+      "uri": null,
+      "rect": [
+        497.73,
+        351.537,
+        516.217,
+        364.439
+      ]
+    },
+    {
+      "page": 20,
+      "target": "ROBOTICS-HANDBOOK-d87f96c3835db619",
+      "uri": null,
+      "rect": [
+        345.002,
+        273.385,
+        363.489,
+        286.287
+      ]
+    },
+    {
+      "page": 20,
+      "target": "ROBOTICS-HANDBOOK-4a1bcaec718f10ed",
+      "uri": null,
+      "rect": [
+        126.82,
+        178.703,
+        145.308,
+        191.604
+      ]
+    },
+    {
+      "page": 21,
+      "target": "ROBOTICS-HANDBOOK-8de67c4ac283ca08",
+      "uri": null,
+      "rect": [
+        404.27,
+        594.173,
+        422.757,
+        607.074
+      ]
+    },
+    {
+      "page": 21,
+      "target": "ROBOTICS-HANDBOOK-10f579513ceb7cd4",
+      "uri": null,
+      "rect": [
+        61.366,
+        562.258,
+        79.853,
+        571.887
+      ]
+    },
+    {
+      "page": 21,
+      "target": "ROBOTICS-HANDBOOK-3193b0ffb09ae1f3",
+      "uri": null,
+      "rect": [
+        257.73,
+        523.071,
+        276.217,
+        535.973
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-ac7438e86cb85ebd",
+      "uri": null,
+      "rect": [
+        252.501,
+        655.343,
+        268.804,
+        676.296
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-33829b0e034a02f2",
+      "uri": null,
+      "rect": [
+        266.811,
+        655.343,
+        283.114,
+        676.296
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-3193b0ffb09ae1f3",
+      "uri": null,
+      "rect": [
+        309.335,
+        620.581,
+        325.638,
+        641.535
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-4fc42779a8a8ca27",
+      "uri": null,
+      "rect": [
+        323.646,
+        620.581,
+        339.949,
+        641.535
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-7e0b7c84ed21fedc",
+      "uri": null,
+      "rect": [
+        337.956,
+        620.581,
+        354.259,
+        641.535
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-3491f905b529783d",
+      "uri": null,
+      "rect": [
+        288.551,
+        585.82,
+        304.854,
+        606.773
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-39a6c3d9fd987246",
+      "uri": null,
+      "rect": [
+        302.862,
+        585.82,
+        319.164,
+        606.773
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-3d16e90141e88e72",
+      "uri": null,
+      "rect": [
+        235.692,
+        551.058,
+        251.995,
+        572.011
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-d30b6fedc77faaf5",
+      "uri": null,
+      "rect": [
+        317.333,
+        516.296,
+        333.636,
+        537.25
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-8662203314894f22",
+      "uri": null,
+      "rect": [
+        339.328,
+        516.296,
+        355.631,
+        537.25
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-b59848410d5d135a",
+      "uri": null,
+      "rect": [
+        284.775,
+        481.535,
+        301.078,
+        502.488
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-d625318b6fb0a410",
+      "uri": null,
+      "rect": [
+        299.085,
+        481.535,
+        315.388,
+        502.488
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-b42bb4596754322b",
+      "uri": null,
+      "rect": [
+        305.833,
+        446.773,
+        322.136,
+        467.727
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-a0e6cd01fb2fdc37",
+      "uri": null,
+      "rect": [
+        327.829,
+        446.773,
+        344.132,
+        467.727
+      ]
+    },
+    {
+      "page": 26,
+      "target": "ROBOTICS-HANDBOOK-4a1bcaec718f10ed",
+      "uri": null,
+      "rect": [
+        264.757,
+        427.812,
+        281.06,
+        448.766
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://www.st.com/en/evaluation-tools/nucleo-g474re.html",
+      "rect": [
+        88.835,
+        624.695,
+        290.3,
+        638.022
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://www.st.com/en/microcontrollers-microprocessors/stm32g474re.html",
+      "rect": [
+        88.835,
+        583.664,
+        278.017,
+        596.991
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/mcpwm.html",
+      "rect": [
+        88.835,
+        541.892,
+        244.318,
+        555.961
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/jtag-debugging/index.html",
+      "rect": [
+        88.835,
+        500.862,
+        282.369,
+        514.931
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-guides/cplusplus.html",
+      "rect": [
+        88.835,
+        459.832,
+        214.111,
+        473.901
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://www.pololu.com/product/5113",
+      "rect": [
+        88.835,
+        419.391,
+        332.311,
+        432.871
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://www.pololu.com/product/2130",
+      "rect": [
+        88.835,
+        378.361,
+        351.096,
+        391.841
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+      "rect": [
+        88.835,
+        336.742,
+        366.446,
+        350.811
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://www.cds.caltech.edu/~murray/FBS/Second_Edition.html",
+      "rect": [
+        88.835,
+        295.602,
+        365.147,
+        309.988
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://modernrobotics.northwestern.edu/",
+      "rect": [
+        88.835,
+        254.572,
+        316.318,
+        268.75
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://underactuated.csail.mit.edu/index.html",
+      "rect": [
+        88.835,
+        214.382,
+        324.467,
+        227.72
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://discourse.openrobotics.org/t/ros-2-lyrical-luth-released/55021",
+      "rect": [
+        88.835,
+        172.512,
+        319.078,
+        186.69
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html",
+      "rect": [
+        88.835,
+        131.482,
+        262.689,
+        145.66
+      ]
+    },
+    {
+      "page": 27,
+      "target": null,
+      "uri": "https://gazebosim.org/docs/latest/ros_installation/",
+      "rect": [
+        88.835,
+        90.561,
+        278.715,
+        104.63
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://control.ros.org/jazzy/doc/ros2_control/controller_manager/doc/userdoc.html",
+      "rect": [
+        88.835,
+        764.987,
+        305.377,
+        779.165
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://docs.ros.org/en/kilted/p/rclcpp/generated/classrclcpp_1_1QoS.html",
+      "rect": [
+        88.835,
+        724.066,
+        263.649,
+        738.135
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://huggingface.co/docs/reachy_mini/index",
+      "rect": [
+        88.835,
+        682.927,
+        235.94,
+        697.105
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://huggingface.co/docs/reachy_mini/platforms/simulation/get_started",
+      "rect": [
+        88.835,
+        641.896,
+        286.482,
+        656.074
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://huggingface.co/docs/lerobot/so101",
+      "rect": [
+        88.835,
+        601.717,
+        183.577,
+        615.044
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://docs.isaacsim.omniverse.nvidia.com/latest/installation/requirements.html",
+      "rect": [
+        88.835,
+        559.945,
+        265.995,
+        574.014
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/",
+      "rect": [
+        88.835,
+        518.915,
+        333.282,
+        532.984
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://huggingface.co/docs/lerobot/act",
+      "rect": [
+        88.835,
+        478.627,
+        169.253,
+        491.954
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://huggingface.co/docs/lerobot/smolvla",
+      "rect": [
+        88.835,
+        437.597,
+        194.54,
+        450.924
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://huggingface.co/docs/lerobot/en/lerobot-dataset-v3",
+      "rect": [
+        88.835,
+        396.566,
+        251.224,
+        409.894
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://huggingface.co/docs/lerobot/rtc",
+      "rect": [
+        88.835,
+        354.794,
+        251.038,
+        368.863
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://huggingface.co/docs/lerobot/async",
+      "rect": [
+        88.835,
+        313.655,
+        272.158,
+        327.833
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://huggingface.co/blog/lerobot-release-v060",
+      "rect": [
+        88.835,
+        272.734,
+        289.089,
+        286.803
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://www.pi.website/blog/api-beta",
+      "rect": [
+        88.835,
+        231.595,
+        265.678,
+        245.773
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://www.tek.com/en/documents/whitepaper/abcs-probes-primer",
+      "rect": [
+        88.835,
+        191.416,
+        269.693,
+        204.743
+      ]
+    },
+    {
+      "page": 28,
+      "target": null,
+      "uri": "https://media.fluke.com/5e1db354-3a6e-49cf-9edd-b10800c0e608_original%20file.pdf",
+      "rect": [
+        88.835,
+        150.375,
+        311.071,
+        163.713
+      ]
+    }
+  ],
+  "limits": "PDF object/text audit, not interactive reader smoke, external URL validation or hardware evidence."
+}

@@ -47,7 +47,7 @@ class ConfigurationTests(unittest.TestCase):
         self.assertEqual(config['product'],identity)
         self.assertEqual(config['product_root'], str(configure.PRODUCT))
         self.assertEqual(config['content_root'], str(self.content))
-        self.assertEqual(len(config['profiles']), 6)
+        self.assertEqual(len(config['profiles']), 7)
         selected = configure.project.load(configure.ENGINE, path, 'cpp-handbook', configure.pub)
         self.assertEqual(selected.output, self.workspace/'output')
         self.assertFalse(selected.output.exists())

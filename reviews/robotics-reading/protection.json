@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "baseline_inventory": "local post-rename inventory, before robotics intake",
+  "protected_files": 523,
+  "historical_pdfs": 517,
+  "old_product_inputs_unchanged": 34,
+  "shared_engine_unchanged": true,
+  "changes": []
+}
