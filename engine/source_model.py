@@ -42,6 +42,8 @@ def blob(root, revision, path, pub):
 
 
 def snapshot(project, views, pub):
+    from product_lock import verify
+    verify(project, pub)
     profile = project.profile
     if not re.fullmatch(r'[a-z][a-z0-9-]*', profile):
         raise pub.PreparationError('invalid profile name')
@@ -100,6 +102,14 @@ def snapshot(project, views, pub):
         for name in config.get('dependencies', []):
             path_parts(name, pub)
             put(name, read(root_fd, name, pub), {'root': 'product', 'path': name})
+        if project.config.get('product'):
+            lock = json.loads(read(root_fd, 'product.json', pub))
+            locked = {e['path']: e for e in lock['inputs']}
+            for path, binding in bindings.items():
+                if binding['root'] == 'product' and (path not in locked or
+                        pub.digest(snapshot[path]) != locked[path]['sha256']):
+                    raise pub.PreparationError('undeclared/drifted product input: ' + path)
+            put('product.json', read(root_fd, 'product.json', pub), {'root': 'product', 'path': 'product.json'})
     for name in (prefix + '/adapter.py', prefix + '/template.tex', prefix + '/theme.sty',
                  'publication/engine/pub.py', 'publication/engine/preview.py'):
         if name not in snapshot:

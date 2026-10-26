@@ -236,6 +236,8 @@ class ResultCommit:
 
 def prepare(project, views=None):
     from project import open_output
+    from product_lock import verify
+    verify(project, sys.modules[__name__])
     open_output(project, sys.modules[__name__])
     with absolute_directory(project.output) as root_fd:
         source = project.provenance(sys.modules[__name__])

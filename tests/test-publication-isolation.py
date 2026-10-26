@@ -36,6 +36,7 @@ class Fixture:
         for name in ('pyproject.toml','uv.lock','.python-version'):
             shutil.copyfile(HERE.parent/name,self.engine/name)
         self.engine_git('init','-q')
+        (self.engine/'.gitignore').write_text('/tmp/\n')
         self.profile_path=self.root/'publication/profiles/fixture'
         shutil.copytree(HERE/'fixtures',self.profile_path)
         config={'schema_version':2,'id':'fixture','repository':'https://example.invalid/content',
@@ -54,11 +55,11 @@ class Fixture:
         self.dist=self.root/'dist';self.dist.mkdir()
         (self.dist/'history.bin').write_bytes(b'protected historical bytes\x00')
         self.dist_before=tree_bytes(self.dist)
-        self.output=self.root/'publication/build'
+        self.output=self.base/'workspace/output'
         self.descriptor=self.root/'project.json'
         self.config={'schema_version':1,'engine':{'repository':'https://example.invalid/engine','commit':'0'*40},
                      'source_repository':config['repository'],'content_root':'.','product_root':'.',
-                     'output_root':'publication/build','profiles':{'fixture':'publication/profiles/fixture/profile.json'}}
+                     'output_root':str(self.output),'profiles':{'fixture':'publication/profiles/fixture/profile.json'}}
         self.repin()
         self.git('init','-q');self.git('add','.')
         self.commit(self.git)
@@ -127,7 +128,7 @@ class IsolationTests(Fixture, unittest.TestCase):
         with self.assertRaises(subprocess.CalledProcessError):self.prepared()
 
     def test_nonempty_output_not_adopted(self):
-        self.config['output_root']='dist';self.descriptor.write_text(json.dumps(self.config))
+        self.output.mkdir(parents=True);(self.output/'history.bin').write_bytes(b'untouched')
         with self.assertRaisesRegex(pub.PreparationError,'initialized'):self.prepared()
 
     def test_output_root_and_ancestor_rejected(self):
@@ -136,9 +137,27 @@ class IsolationTests(Fixture, unittest.TestCase):
             with self.subTest(name=name),self.assertRaises(pub.PreparationError):self.selected()
 
     def test_output_parent_symlink_rejected(self):
-        (self.root/'redirect').symlink_to(self.dist,target_is_directory=True)
-        self.config['output_root']='redirect/output';self.descriptor.write_text(json.dumps(self.config))
+        (self.base/'redirect').symlink_to(self.dist,target_is_directory=True)
+        self.config['output_root']=str(self.base/'redirect/output');self.descriptor.write_text(json.dumps(self.config))
         with self.assertRaises(OSError):self.prepared()
+
+    def test_direct_descriptor_cannot_write_inside_content_or_product(self):
+        before=tree_bytes(self.root)
+        for path in (self.root/'publication/build', self.root/'dist/new',
+                     self.profile_path/'new', self.engine/'engine/new', self.engine/'tools/new', self.engine/'latex/new'):
+            with self.subTest(path=path):
+                self.config['output_root']=str(path);self.descriptor.write_text(json.dumps(self.config))
+                with self.assertRaisesRegex(pub.PreparationError,'outside'):
+                    self.prepared()
+                self.assertFalse(path.exists())
+        after=tree_bytes(self.root)
+        before.pop('project.json');after.pop('project.json')
+        self.assertEqual(before,after)
+
+    def test_engine_tmp_workspace_is_supported(self):
+        self.config['output_root']=str(self.engine/'tmp/output')
+        self.descriptor.write_text(json.dumps(self.config))
+        self.prepared()
 
     def test_profile_and_dependency_traversal_rejected(self):
         self.config['profiles']['fixture']='../escape/profile.json';self.descriptor.write_text(json.dumps(self.config))

@@ -21,6 +21,9 @@ from evidence import verify
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('attempt',type=Path)
 args=parser.parse_args()
+import pub
+from boundaries import for_attempt
+args.attempt = for_attempt(args.attempt, pub)
 work=args.attempt/'work'
 _,ready,report,manifest,files,_=verify(args.attempt)
 out=work/'visual-inputs'

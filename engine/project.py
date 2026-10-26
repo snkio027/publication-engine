@@ -23,8 +23,10 @@ class Project:
     profile_path: str
 
     def provenance(self, pub):
+        from product_lock import verify
         return {'engine': pub.git_context(self.engine),
                 'content': pub.git_context(self.content),
+                'product': verify(self, pub),
                 'engine_pin': self.config['engine'],
                 'project_sha256': pub.digest(self.raw)}
 
@@ -58,22 +60,23 @@ def load(engine, descriptor, profile, pub):
     engine = Path(engine).absolute()
     if engine == paths['content'] or engine == paths['product']:
         raise pub.PreparationError('engine must be an independent checkout')
-    output = paths['output']
-    if output == Path('/') or any(root == output or root.is_relative_to(output)
-                                   for root in (engine, paths['content'], paths['product'])):
-        raise pub.PreparationError('output may not be a source root or its ancestor')
-    if any(p.startswith('.') for p in output.parts[1:]):
-        raise pub.PreparationError('output may not target hidden administrative directories')
+    from boundaries import check
+    check(paths['output'], engine=engine, content=paths['content'], product=paths['product'], pub=pub)
     profile_path = config['profiles'][profile]
     pub.parts(profile_path)
     if profile_path != '/'.join(pub.parts(profile_path)) or not profile_path.endswith('/profile.json'):
         raise pub.PreparationError('profile path must be a canonical relative profile.json')
-    return Project(engine=engine, descriptor=descriptor, raw=raw, config=config,
-                   profile=profile, profile_path=profile_path, **paths)
+    selected = Project(engine=engine, descriptor=descriptor, raw=raw, config=config,
+                       profile=profile, profile_path=profile_path, **paths)
+    from product_lock import verify
+    verify(selected, pub)
+    return selected
 
 
 def open_output(project, pub):
     """Initialize only an empty dedicated output root; never adopt existing data."""
+    from boundaries import for_project
+    for_project(project.output, project, pub)
     with pub.absolute_directory(project.output, create=True) as out:
         names = os.listdir(out)
         if not names:

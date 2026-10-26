@@ -78,11 +78,14 @@ def identity_signals(component, positions, role_position, page_texts):
 
 
 def inspect(attempt, render=True, corpus=None):
+    import pub
+    from boundaries import for_attempt
+    attempt = for_attempt(attempt, pub)
     work = attempt / 'work'
     _, ready, report, manifest, files, _ = verify(attempt)
     catalog = json.loads(files['source-catalog.json'])
     if corpus is None:
-        raise RuntimeError('explicit --corpus is required; product fixtures belong to the content project')
+        raise RuntimeError('explicit --corpus is required; fixtures belong to the product/consumer')
     corpus_bytes = corpus.read_bytes()
     fixtures = json.loads(corpus_bytes)['fixtures']
     if not fixtures or len({f['id'] for f in fixtures})!=len(fixtures):
@@ -266,4 +269,4 @@ if __name__=='__main__':
     args=parser.parse_args()
     if args.compare:print(json.dumps(compare(*args.compare),ensure_ascii=False,indent=2))
     elif args.density_compare:print(json.dumps(density_compare(args.density_compare),ensure_ascii=False,indent=2))
-    else:inspect(args.attempt.resolve(),not args.no_render,args.corpus)
+    else:inspect(args.attempt.absolute(),not args.no_render,args.corpus)

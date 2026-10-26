@@ -167,7 +167,7 @@ class RealPreviewTests(base.Fixture, unittest.TestCase):
     def test_real_success_and_compiler_cannot_write_dist(self):
         # Match a consumer's nested output so the linked ancestor is not a product path.
         self.output = self.output / 'standalone'
-        self.config['output_root'] = 'publication/build/standalone'
+        self.config['output_root'] = str(self.output)
         self.descriptor.write_text(json.dumps(self.config))
         protected = [self.dist / "history.bin", self.engine / "engine/pub.py",
                      self.root / "00-fixture.md", self.template]
@@ -333,13 +333,13 @@ class RealPreviewTests(base.Fixture, unittest.TestCase):
         self.inject(r"\loop\iftrue\repeat")
         for signum in (signal.SIGINT, signal.SIGTERM, signal.SIGKILL):
             with self.subTest(signal=signum):
-                before = set((self.root / "publication/build/preview").glob("*/*"))
+                before = set((self.output / "preview").glob("*/*"))
                 child = self.start()
                 deadline = time.monotonic() + 90
                 commands = []
                 while time.monotonic() < deadline:
                     self.assertIsNone(child.poll(), "controller unexpectedly exited")
-                    runs = set((self.root / "publication/build/preview").glob("*/*")) - before
+                    runs = set((self.output / "preview").glob("*/*")) - before
                     if runs:
                         run = runs.pop()
                         commands = list(run.glob("work/typeset/*/compile-0.txt.command.json"))

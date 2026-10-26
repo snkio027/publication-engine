@@ -17,7 +17,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 REGISTRY = {
-    'logic': ['test-publication-isolation.py','test-candidate.py','test-evidence.py','test-source-runtime.py'],
+    'logic': ['test-publication-isolation.py','test-candidate.py','test-evidence.py','test-source-runtime.py','test-boundaries.py'],
     'adapters': ['test-reading.py'],
     'native': ['test-preview.py'],
 }
